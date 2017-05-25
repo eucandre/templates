@@ -1,0 +1,4029 @@
+@charset "UTF-8";
+
+.abaht {
+  top: 124px;
+}
+
+.legenda {
+  background-color: white;  
+  display: block;
+  -webkit-margin-before: 1em;
+  -webkit-margin-after: 1em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+}
+
+/* GERAL */
+.container-fluid {
+  font-size: 12px;
+}
+.section-body {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.section-body img.logo-portal {
+  width: 80%;
+}
+.feature img.logo-al {
+  width: 10%;
+}
+.section h1.title {
+  height: auto;
+  font-family: 'Raleway-ExtraLight', sans-serif;
+  font-weight: 200;
+  font-size: 5em;
+  color: #14F0FE;
+}
+.section p.context {
+  margin-top: 30px;
+  font-family: 'Raleway-Light', sans-serif;
+  font-weight: 300;
+  line-height: 200%;
+  font-size: 1.4em;
+  color: white;
+}
+
+/* HEADER TOP */
+.line-top {
+  width: 100%;
+  /*background: rgba(4, 64, 103, 0.5);*/
+  margin: 0 0 10px 0;
+}
+.headertop {
+  color: white;
+  font-family: 'Cafeta', sans-serif;
+  font-size: 120%;
+  padding: 10px 0 10px 10px;
+}
+.headertop img.bandeira {
+  width: 17%;
+  height: auto;
+}
+.selecttop {
+  color: white;
+  font-family: 'Raleway-Medium', sans-serif;
+  font-size: 1.4em;
+  padding: 10px 10px 10px 0;
+}
+.selecttop img.bandeira{
+  width: 9%;
+  height: auto;
+  margin: -8px 2% 0 0;
+}
+ul.dropdown-menu {
+  height: 150px;
+  overflow-y: scroll;
+}
+.btn-primary-top {
+  font-family: 'Raleway-Light', sans-serif;
+  background: none;
+  border: solid #14F0FE 1px;
+  color: #14F0FE;
+}
+.btn-primary-top:hover {
+  color: #14F0FE;
+}
+.btn-primary-top:visited {
+  color: #14F0FE;
+}
+
+/* PRINCIPAL */
+.feature {
+  background: #fff url('/images/fundo1.png') no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  padding: 0;
+  margin: 0;
+}
+.menu-top {
+  padding-top: 25px;
+}
+.menu-top ul {
+  list-style-type: none;
+  padding: 10px 0;
+}
+.menu-top ul li {
+  display: inline;
+  margin-right: 5%;
+}
+.menu-top ul li.social-media {
+  display: inline;
+  margin-right: 6%;
+}
+.menu-top ul li a {
+  text-decoration: none;
+  font-family: 'Raleway-Light', sans-serif;
+  font-weight: 400;
+  font-size: 1.3em;
+  color: white;
+}
+.menu-top ul li a:hover {
+  color: #14F0FE;
+}
+.menu-top ul li.siganos {
+  text-decoration: none;
+  font-family: 'Raleway-Light', sans-serif;
+  font-weight: 400;
+  font-size: 1.3em;
+  color: #14F0FE;
+}
+.menu-top ul li.social-media img {
+  width: 25px;
+  height: auto;
+  margin: 0 -15px 0 -10px;
+}
+img.help {
+  width: 32px;
+  height: auto;
+  right: 0;
+  top: 170px;
+  position: fixed;
+}
+.search-title {
+  margin-top: 40px;
+}
+.search-input {
+  margin-top: 40px;
+}
+.search-input input {
+  font-size: 20px;
+  height: 50px;
+}
+.navbar-brand {
+  width: 3%;
+  float: left;
+}
+.navbar-brand img {
+  margin-top: 5px;
+}
+.navbar-default .navbar-collapse {
+  margin: 0 0 0 -10px;
+}
+.navbar-collapse {
+  width: 96%;
+  float: left;
+  padding-left: 2%;
+  padding-right: 0;
+}
+.navbar-nav li {
+  text-transform: uppercase;
+}
+.navbar-nav li a {
+  text-align: center;
+  font-size: 90%;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  opacity: 0.8;
+}
+.navbar-nav li a:hover {
+  opacity: 1;
+}
+.navbar-nav li a img {
+  width: 22px;
+}
+.navbar-nav li.icon-about {
+  width: 6%;
+  height: auto;
+  /* padding: 3% 2% 2% 2%; */
+  margin: 0;
+  /*background: blue;*/
+  padding: 1.5% 0 1% 0;
+}
+.navbar-nav li.icon-municipal {
+  width: 15%;
+  height: auto;
+  /* padding: 2% 0 2% 0; */
+  margin: 0;
+  /*background: red;*/
+  padding: 1.5% 0 1% 0;
+}
+.navbar-nav li.icon-algeo {
+  width: 14%;
+  height: auto;
+  /* padding: 2% 0 2% 0; */
+  margin: 0;
+  /*background: blue;*/
+  padding: 1.5% 0 1% 0;
+}
+.navbar-nav li.icon-maps {
+  width: 6%;
+  height: auto;
+  /* padding: 2% 0 2% 0; */
+  margin: 0;
+  /*background: red;*/
+  padding: 1.5% 0 1% 0;
+}
+.navbar-nav li.icon-publications {
+  width: 9%;
+  height: auto;
+  /* padding: 2% 0 2% 0; */
+  margin: 0;
+  /*background: blue;*/
+  padding: 1.5% 0 1% 0;
+}
+.navbar-nav li.icon-updates {
+  width: 14%;
+  height: auto;
+  /* padding: 2% 0 2% 0; */
+  margin: 0;
+  /*background: red;*/
+  padding: 1.5% 0 1% 0;
+}
+.navbar-nav li.icon-manual {
+  width: 11%;
+  height: auto;
+  /* padding: 2% 0 2% 0; */
+  margin: 0;
+  /*background: blue;*/
+  padding: 1.5% 0 1% 0;
+}
+.navbar-nav li.icon-apps {
+  width: 6%;
+  height: auto;
+  /* padding: 2% 0 2% 0; */
+  margin: 0;
+  /*background: red;*/
+  padding: 1.5% 0 1% 0;
+}
+.navbar-nav li.icon-contact {
+  width: 10%;
+  height: auto;
+  /* padding: 2% 0 2% 0; */
+  margin: 0;
+  /*background: red;*/
+  padding: 1.5% 0 1% 0;
+}
+
+/*	MENU FIXO  */
+
+.menu-scroll {
+  height: 160px;
+  background: rgba(4, 64, 103, 0.5);
+  border-radius: 20px 20px 0 0;
+  padding: 5px 0 10px 0;
+}
+.menu-scroll ul {
+  margin-left: -4.5%;
+}
+.menu-scroll ul li {
+  width: 10.4%;
+  margin-right: 0.3%;
+  margin-left: 0.3%;
+  list-style: none;
+  position: relative;
+  float: left;
+}
+.menu-scroll ul li a {
+  width: 100%;
+  text-align: center;
+  display: block;
+  position: relative;
+  text-decoration: none;
+  opacity: 0.8;
+  color: #00A1CB;
+}
+.menu-scroll ul li a:hover {
+  opacity: 1;
+  color: #00A1CB;
+}
+.menu-scroll ul li img {
+  width: 55%;
+}
+.menu-scroll ul li a p {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  font-size: 85%;
+  color: #00A1CB;
+  margin: 10px 0 0 0;
+}
+.menu-scroll ul li p.text-horizontal {
+  padding: 10px 0 0 0;
+  text-align: center;
+}
+.menu-scroll ul li p.text-vertical {
+  padding: 20px 0 0 0;
+  text-align: center;
+}
+
+/* SOBRE O PORTAL */
+
+.about {
+  background: #fff url('/images/fundo2.png') no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  padding: 0;
+}
+
+/* INFORMAÇÕES MUNICIPAIS */
+
+.municipal-information {
+  background: #011828;
+}
+.municipal-information-cont {
+  margin-top: 20px;
+  padding: 0;
+  text-align: center;
+}
+.municipal-information-topics {
+  width: 210px;
+  height: auto;
+  padding: 0;
+  margin: 0;
+}
+.municipal-information-topics a {
+  text-decoration: none;
+}
+.municipal-information-topics img.images-topics {
+  width: 160px;
+  height: auto;
+}
+.municipal-information-topics h3.title-topics {
+  margin: 8px 0px 8px 0px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  font-size: 1.8em;
+  color: #14F0FE;
+}
+.municipal-information-topics p.text-topics {
+  font-family: 'Raleway-Regular', sans-serif;
+  font-weight: 300;
+  font-size: 1.2em;
+  color: white;
+  line-height: 120%;
+  width: 240px;
+  height: auto;
+  margin: 0 0 0 -10px;
+}
+.seta-topics img {
+  width: 50px;
+  margin: 50px 0 0 0;
+}
+.municipal-information-buttons {
+  margin: 0;
+  padding: 0;
+}
+.button-sim#btn-simple {
+  width: 220px;
+  height: 38px;
+  margin: 3% 0 0 0;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  font-size: 1.2em;
+  background: #002844;
+  border-color: white;
+  color: white;
+}
+.button-sim#btn-simple:hover {
+  background: #002844;
+  border-color: #14F0FE;
+  color: #14F0FE;
+  transition: background-color 1s;
+}
+.button-sim#btn-full {
+  width: 220px;
+  height: 38px;
+  margin: 3% 0 0 0;
+  font-family: 'Raleway-Light', sans-serif;
+  font-weight: 600;
+  font-size: 1.2em;
+  background: #002844;
+  border-color: white;
+  color: white;
+}
+.button-sim#btn-full:hover {
+  background: #002844;
+  border-color: #14F0FE;
+  color: #14F0FE;
+  transition: background-color 1s;
+}
+
+/* ALAGOAS GEOGRÁFICO */
+
+.alagoas-geographic {
+  background: #002744;
+}
+img.algeo {
+  width: 14%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+}
+.button-algeo {
+  width: 120px;
+  height: 38px;
+  margin: 8% 0 0 0;
+  text-shadow: 2px black;
+  font-family: 'Raleway-Light', sans-serif;
+  font-weight: 600;
+  font-size: 1.2em;
+  border-color: white;
+  background: #011828;
+  color: white;
+  padding-bottom:10px;
+}
+.button-algeo:hover {
+  color: #14F0FE;
+  border-color: #14F0FE;
+  transition: background-color 1s;
+}
+
+/* ÚLTIMAS ATUALIZAÇÕES */
+
+.latest-updates {
+  background: #011828;
+}
+.latest-updates-col h2.title-col a {
+  font-family: 'Raleway-Light', sans-serif;
+  font-weight: 500;
+  font-size: 1em;
+  color: #14F0FE;
+  text-decoration: none;
+}
+.latest-updates-col h2.title-col a img {
+  width: 50px;
+}
+.table-statistic {
+  /* background: rgba(0, 38, 66, 0.4); */
+  padding: 10px;
+  height: 360px;
+  overflow-y: scroll;
+}
+.latest-updates-table {
+  width: 100%;
+  margin: 0;
+  line-height: 200%;
+  /* border: 0; */
+}
+.latest-updates-table tr.line-blue {
+  color: #14F0FE;
+  font-family: 'Raleway-Regular', sans-serif;
+  font-weight: 500;
+  font-size: 1.3em;
+  text-decoration: none;
+}
+.latest-updates-table tr.line-white {
+  color: white;
+  font-family: 'Raleway-Light', sans-serif;
+  font-weight: 500;
+  font-size: 1em;
+  text-decoration: none;
+}
+.latest-updates-table td.td-left a {
+  width: 70%;
+  text-decoration: none;
+}
+.latest-updates-table td.td-right {
+  padding: 0 1%;
+}
+.latest-updates-table td.td-right a {
+  width: 30%;
+  text-decoration: none;
+}
+.latest-updates-col .cont-col ul li {
+  margin: 10px 0 10px 0;
+  list-style: none;
+}
+.latest-updates-col .cont-col ul li a {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  font-size: 1.3em;
+  color: white;
+  text-decoration: none;
+}
+.latest-updates-col .cont-col ul li.view {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.latest-updates-col .cont-col ul li.view a {
+  font-family: 'Raleway-Light', sans-serif;
+  font-weight: 500;
+  font-size: 1.3em;
+  color: #14F0FE;
+  list-style: none;
+  text-decoration: none;
+}
+.button-down {
+  width: 150px;
+  height: 38px;
+  margin: 5% 0 0 0;
+  font-family: 'Raleway-Light', sans-serif;
+  font-weight: 600;
+  font-size: 1.2em;
+  border-color: white;
+  background: #002844;
+  color: white;
+  margin-bottom: 20px;
+}
+.button-down:hover {
+  color: #14F0FE;
+  border-color: #14F0FE;
+  transition: background-color 1s;
+}
+
+/* MAIS INFORMAÇÕES */
+
+.more-information {
+  background: #002744;
+}
+
+/* FALE CONOSCO */
+
+.contact {
+  background: #002744;
+}
+.contact .contact-left h2 {
+  font-family: 'Raleway-ExtraLight', sans-serif;
+  font-weight: 100;
+  font-size: 3.6em;
+  color: white;
+  margin: 0 0 50px 0;
+}
+.text-input {
+  width:100%;
+  height: auto;
+  resize: none;
+  padding: 5px;
+  margin: 0;
+}
+.text-area .text-input {
+  width:100%;
+  height:150px;
+  padding:0px;
+}
+.contact .contact-right h2 {
+  font-family: 'Raleway-Light', sans-serif;
+  font-weight: 100;
+  font-size: 2em;
+  color: white;
+}
+.contact .contact-seplande .contact-phone {
+  font-family: 'Raleway-Light', sans-serif;
+  font-weight: 300;
+  font-size: 3em;
+  color: white;
+}
+.contact .contact-seplande .contact-address {
+  font-family: 'Raleway-Light', sans-serif;
+  font-weight: 300;
+  font-size: 1.6em;
+  color: white;
+}
+.contact-btn {
+  padding: 0;
+  margin: 0;
+}
+.contact-btn input {
+  width: 100%;
+  height: auto;
+  background: #0064eb;
+  color: white;
+  border: 0;
+}
+.contact-form-text {
+  font-family: 'Raleway-ExtraLight', sans-serif;
+  font-weight: 300;
+  font-size: 1.4em;
+  color: white;
+}
+.button-form {
+  width: 130px;
+  height: 38px;
+  margin: 8% 0 0 0;
+  font-family: 'Raleway-Light', sans-serif;
+  font-weight: 600;
+  font-size: 1.2em;
+  color: white;
+  padding-bottom:10px;
+  background: #0d982c;
+  border-radius: 20px;
+}
+.button-form:hover {
+  color: white;
+  border-color: #0064eb;
+  background: #0064eb;
+}
+.checks {
+  font-family: 'Raleway-Light', sans-serif;
+  font-size: 1.1em;
+  color: white;
+}
+.contact-right img {
+  margin: 20px 0 -10px 0;
+  padding: 0;
+}
+.contact-left {
+  padding-top: 3%;
+}
+.contact-right {
+  padding-top: 3%;
+}
+.contact-right .geolocation {
+  width: 100%;
+  height: 380px;
+}
+.contact-links {
+  margin: 20px 0 0 0;
+  padding: 0;
+}
+.contact-links ul {
+  font-family: 'Raleway-Light', sans-serif;
+  font-weight: 400;
+  font-size: 1.3em;
+  color: #14F0FE;
+  padding: 0;
+  margin: 0;
+}
+.contact-links ul li {
+  list-style: none;
+  text-decoration: none;
+}
+.contact-links ul li a {
+  text-decoration: none;
+  color: white;
+}
+.contact-links ul li a:hover {
+  color: #ccc;
+}
+.contact-links {
+  margin: 20px 0 0 0;
+}
+.contact-links ul {
+  font-family: 'Raleway-ExtraLight', sans-serif;
+  font-weight: 400;
+  font-size: 1em;
+}
+.contact-links ul li {
+  list-style: none;
+  text-decoration: none;
+}
+.contact-links ul li a {
+  text-decoration: none;
+}
+.contact-lei a img {
+  width: 70%;
+  height: auto;
+  margin: 40px 0 0 0;
+  padding: 0;
+}
+.contact-brasoes img {
+  width: 90%;
+  height: auto;
+  margin: 20px 0 0 0;
+  padding: 0;
+}
+.contact-license {
+  padding: 0;
+}
+.contact-license a {
+  width: 100%;
+  font-family: 'Raleway-ExtraLight', sans-serif;
+  font-size: 70%;
+  color: white;
+  text-decoration: none;
+}
+.contact-license .image-license {
+  width: 20%;
+  padding: 0;
+}
+.contact-license .text-license {
+  width: 80%;
+  padding: 0;
+  margin: 15px 0 0 -20px;
+}
+
+/* ALTERAÇÕES DO BOOTSTRAP - MEDIAS QUERIES*/
+/* MEDIAS QUERIES MIN-WIDTH:240px */ /*OK*/
+@media only screen and (min-width: 240px) {
+  .navbar-collapse ul.navbar-nav li.icon-datas a {
+    color: #0077B9;
+    opacity: 0.7;
+    text-transform: uppercase;
+  }
+  .navbar-collapse ul.navbar-nav li.icon-fonts a {
+    color: #0077B9;
+    opacity: 0.7;
+    text-transform: uppercase;
+  }
+  .navbar-collapse ul.navbar-nav li.icon-themes a {
+    color: #0077B9;
+    opacity: 0.7;
+    text-transform: uppercase;
+  }
+}
+/* MEDIAS QUERIES MAX-WIDTH:320px */ /*OK*/
+@media only screen and (max-width : 320px) {
+  .headertop {
+    color: white;
+    font-family: 'Cafeta', sans-serif;
+    font-size: 100%;
+    padding: 10px 0 10px 10px;
+  }
+  .selecttop img.bandeira{
+    width: 12%;
+    height: auto;
+    margin: -10px 2% 0 0;
+  }
+  .btn-primary-top {
+    background: rgba(4, 64, 103, 0.5);
+    font-size: 0.5em;
+  }
+  .section h1.title {
+    height: auto;
+    font-size: 2.2em;
+    margin-top: 0;
+  }
+  .search-input input.form-control {
+    font-size: 1em;
+  }
+  .section p.context {
+    font-size: 0.9em;
+  }/*
+  .navbar {
+    bottom: 0;
+    margin-bottom: 0;
+    border-width: 1px 0 0;
+    border-radius: 0;
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    -webkit-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }*/
+  .navbar-brand img {
+    margin-top: 0;
+  }
+  .container-fluid .navbar-collapse {
+    width: 100%;
+    margin-left: 0;
+  }
+  .navbar-collapse ul.navbar-nav {
+    width: 100%;
+    height: auto;
+    margin: 0;
+  }
+  .navbar-collapse ul.navbar-nav li {
+    width: 22%;
+    height: auto;
+    margin: 0.5% 5%;
+    padding: 0;
+    text-align: center;
+    float: left;
+    text-transform: capitalize;
+    position: relative;
+  }
+  .navbar-collapse ul.navbar-nav li img {
+    width: 70%;
+  }
+  .navbar-collapse ul.navbar-nav li a {
+    width: 100%;
+    font-size: 99%;
+  }
+  .section-body {
+    padding-top: 15px;
+  }
+  .municipal-information-cont {
+    margin-top: 5px;
+    padding: 0;
+    text-align: center;
+  }
+  .municipal-information-topics {
+    width: 90%;
+    margin: 0 0 0 5%;
+    height: auto;
+  }
+  .municipal-information-topics img.images-topics {
+    width: 30%;
+    height: auto;
+  }
+  .municipal-information-topics h3.title-topics {
+    margin: 8px 0 8px 0;
+    font-size: 1.2em;
+  }
+  .municipal-information-topics p.text-topics {
+    font-size: 0.9em;
+    line-height: 120%;
+    width: 90%;
+    height: auto;
+    margin: 0 0 0 10px;
+  }
+  .seta-topics img {
+    width: 10%;
+    -ms-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+    margin: 15px 0 10px 0;
+  }
+  .button-sim#btn-simple {
+    width: 160px;
+    height: 30px;
+    font-size: 0.9em;
+  }
+  .button-sim#btn-full {
+    width: 160px;
+    height: 30px;
+    font-size: 0.9em;
+  }
+  .button-algeo {
+    width: 90px;
+    height: 30px;
+    font-size: 0.9em;
+  }
+  .latest-updates-col h2.title-col a {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 0.7em;
+  }
+  .latest-updates-col h2.title-col a img {
+    width: 40px;
+  }
+  .table-statistic {
+    height: 260px;
+  }
+  .latest-updates-table tr.line-blue {
+    font-size: 1em;
+  }
+  .latest-updates-table tr.line-white {
+    font-size: 0.9em;
+  }
+  .button-down {
+    width: 100px;
+    height: 30px;
+    font-size: 0.9em;
+  }
+  .latest-updates-col .cont-col ul li a {
+    font-size: 0.9em;
+  }
+  .latest-updates-col .cont-col ul li.view a {
+    font-size: 1em;
+  }
+  .latest-updates-col .cont-col ul li.view a img {
+    width: 16px;
+    height: auto;
+  }
+  .contact .contact-left h2 {
+    font-size: 2.3em;
+    margin: 0 0 25px 0;
+  }
+  .contact-form-text {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    font-size: 1.4em;
+    color: white;
+  }
+  .button-form {
+    width: 130px;
+    height: 38px;
+    margin: 8% 0 0 0;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 1.2em;
+    color: white;
+    padding-bottom:10px;
+    background: #0d982c;
+    border-radius: 20px;
+  }
+  .button-form:hover {
+    color: white;
+    border-color: #0064eb;
+    background: #0064eb;
+  }
+  .contact .contact-seplande .contact-phone {
+    font-size: 2em;
+  }
+  .contact .contact-seplande .contact-address {
+    font-size: 1.2em;
+  }
+  .contact-form-text {
+    margin-top: -40px;
+    font-size: 1.2em;
+  }
+  .button-form {
+    width: 110px;
+    height: 32px;
+    font-size: 1em;
+    padding-bottom:10px;
+  }
+  .checks {
+    font-size: 0.9em;
+  }
+  .contact-seplande {
+    text-align: center;
+  }
+  .contact .contact-right h2 {
+    font-size: 1.6em;
+  }
+  .contact-lei {
+    width: 30%;
+    height: auto;
+    margin: -10px 0 0 0;
+    padding: 0;
+  }
+  .contact-lei img{
+    width: 100%;
+  }
+  .contact-brasoes {
+    width: 70%;
+    height: auto;
+  }
+  .contact-brasoes img {
+    width: 100%;
+  }
+  .contact-right .geolocation {
+    width: 100%;
+    height: 260px;
+  }
+  .contact-links ul {
+    font-size: 0.8em;
+  }
+  .contact-license {
+    text-align: center;
+  }
+  .contact-license .image-license {
+    width: 100%;
+  }
+  .contact-license .text-license {
+    width: 90%;
+    margin-left: 5%;
+  }
+}
+/* MEDIA QUERIE MIN-WIDTH:321PX AND MAX-WIDTH:479PX PORTRAIT */ /*OK*/
+@media only screen and (min-width: 321px) and (max-width: 479px) and (orientation: portrait) {
+  .headertop {
+    font-size: 110%;
+  }
+  .btn-primary-top {
+    font-size: 0.55em;
+  }
+  .section-body img.logo-portal {
+    width: 80%;
+    margin: 20px 0 0 0;
+  }
+  .search-title {
+    margin-top: 30px;
+  }
+  .search-input {
+    margin-top: 40px;
+  }
+  .section h1.title {
+    height: auto;
+    font-size: 2.3em;
+    margin-top: 0;
+  }
+  .section h1.title#title-feature {
+    height: auto;
+    width: 80%;
+    margin-left: 10%;
+    font-size: 3.5em;
+  }
+  .search-input input.form-control {
+    font-size: 1em;
+  }
+  .section p.context {
+    font-size: 1.2em;
+  }/*
+  .navbar {
+    bottom: 0;
+    margin-bottom: 0;
+    border-width: 1px 0 0;
+    border-radius: 0;
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    -webkit-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }*/
+  .navbar-brand img {
+    margin-top: 0;
+  }
+  .container-fluid .navbar-collapse {
+    width: 100%;
+    margin-left: 0;
+  }
+  .navbar-collapse ul.navbar-nav {
+    width: 100%;
+    height: auto;
+    margin: 0;
+  }
+  .navbar-collapse ul.navbar-nav li {
+    width: 24%;
+    height: auto;
+    margin: 1% 4%;
+    padding: 0;
+    text-align: center;
+    display: inline-block;
+    float: left;
+    text-transform: capitalize;
+  }
+  .navbar-collapse ul.navbar-nav li img {
+    width: 72%;
+  }
+  .navbar-collapse ul.navbar-nav li a {
+    width: 100%;
+    line-height: 130%;
+    font-size: 100%;
+  }
+  /*
+  .navbar-collapse ul.navbar-nav li.icon-portal {
+      display: none;
+  }*/
+  .section-body {
+    padding-top: 10px;
+  }
+  .municipal-information-cont {
+    margin-top: 5px;
+    padding: 0;
+    text-align: center;
+  }
+  .municipal-information-topics {
+    width: 90%;
+    margin: 0 0 0 5%;
+    height: auto;
+  }
+  .municipal-information-topics img.images-topics {
+    width: 35%;
+    height: auto;
+  }
+  .municipal-information-topics h3.title-topics {
+    margin: 8px 0 8px 0;
+    font-size: 1.25em;
+  }
+  .municipal-information-topics p.text-topics {
+    font-size: 1em;
+    line-height: 120%;
+    width: 90%;
+    height: auto;
+    margin: 0 0 0 10px;
+  }
+  .seta-topics img {
+    width: 10%;
+    -ms-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+    margin: 15px 0 10px 0;
+  }
+  .button-sim#btn-simple {
+    width: 180px;
+    height: 32px;
+    font-size: 1em;
+  }
+  .button-sim#btn-full {
+    width: 180px;
+    height: 32px;
+    font-size: 1em;
+  }
+  .button-algeo {
+    width: 100px;
+    height: 32px;
+    font-size: 1em;
+  }
+  .latest-updates-col h2.title-col a {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 0.7em;
+  }
+  .latest-updates-col h2.title-col a img {
+    width: 40px;
+  }
+  .table-statistic {
+    height: 260px;
+  }
+  .latest-updates-table tr.line-blue {
+    font-size: 1em;
+  }
+  .latest-updates-table tr.line-white {
+    font-size: 0.9em;
+  }
+  .button-down {
+    width: 100px;
+    height: 30px;
+    font-size: 0.9em;
+  }
+  .latest-updates-col .cont-col ul li a {
+    font-size: 0.9em;
+  }
+  .latest-updates-col .cont-col ul li.view a {
+    font-size: 1em;
+  }
+  .latest-updates-col .cont-col ul li.view a img {
+    width: 16px;
+    height: auto;
+  }
+  .contact .contact-left h2 {
+    font-size: 2.3em;
+    margin: 0 0 25px 0;
+  }
+  .contact-seplande {
+    text-align: center;
+  }
+  .contact .contact-seplande .contact-phone {
+    font-size: 2em;
+  }
+  .contact .contact-seplande .contact-address {
+    font-size: 1.2em;
+  }
+  .checks {
+    font-size: 0.9em;
+  }
+  .contact-form-text {
+    margin-top: -40px;
+    font-size: 1.2em;
+  }
+  .button-form {
+    width: 115px;
+    height: 33px;
+    font-size: 1em;
+    padding-bottom:10px;
+  }
+  .contact .contact-right h2 {
+    font-size: 1.6em;
+  }
+  .contact-lei {
+     width: 30%;
+     height: auto;
+     margin: -10px 0 0 0;
+     padding: 0;
+   }
+  .contact-lei img{
+    width: 100%;
+  }
+  .contact-brasoes {
+    width: 70%;
+    height: auto;
+  }
+  .contact-brasoes img {
+    width: 100%;
+  }
+  .contact-right .geolocation {
+    width: 100%;
+    height: 260px;
+  }
+  .contact-links ul {
+    font-size: 0.9em;
+  }
+  .contact-license {
+    text-align: center;
+  }
+  .contact-license .image-license {
+    width: 100%;
+  }
+  .contact-license .text-license {
+    width: 90%;
+    margin-left: 5%;
+  }
+}
+/* MEDIA QUERIE MIN-WIDTH:480PX AND MAX-WIDTH:599PX PORTRAIT */ /*OK*/
+@media only screen and (min-width: 480px) and (max-width: 599px) and (orientation: portrait) {
+  .headertop {
+    font-size: 110%;
+  }
+  .btn-primary-top {
+    font-size: 0.55em;
+  }
+  .section-body img.logo-portal {
+    width: 75%;
+    margin: 20px 0 0 0;
+  }
+  .search-title {
+    margin-top: 30px;
+  }
+  .search-input {
+    margin-top: 40px;
+  }
+  .section h1.title {
+    height: auto;
+    font-size: 2.7em;
+    /*margin-top: 0;*/
+  }
+  .section h1.title#title-feature {
+    height: auto;
+    width: 80%;
+    margin-left: 10%;
+    font-size: 3.5em;
+    line-height: 130%;
+  }
+  .search-input input.form-control{
+    font-size: 1em;
+  }
+  .section p.context {
+    font-size: 1.2em;
+  }/*
+  .navbar {
+    bottom: 0;
+    margin-bottom: 0;
+    border-width: 1px 0 0;
+    border-radius: 0;
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    -webkit-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }*/
+  .navbar-brand img {
+    margin-top: 0;
+  }
+  .container-fluid .navbar-collapse {
+    width: 100%;
+    margin-left: 0;
+  }
+  .navbar-collapse ul.navbar-nav {
+    width: 100%;
+    height: auto;
+    margin: 0;
+  }
+  .navbar-collapse ul.navbar-nav {
+    width: 100%;
+    height: auto;
+  }
+  .navbar-collapse ul.navbar-nav li {
+    width: 18%;
+    height: auto;
+    margin: 1% 7%;
+    text-align: center;
+    display: inline-block;
+    float: left;
+    text-transform: capitalize;
+  }
+  .navbar-collapse ul.navbar-nav li img {
+    width: 70%;
+  }
+  .navbar-collapse ul.navbar-nav li a {
+    width: 100%;
+    line-height: 130%;
+    font-size: 99%;
+  }
+  .section-body {
+    padding-top: 10px;
+  }
+  .municipal-information-cont {
+    margin-top: 5px;
+    padding: 0;
+    text-align: center;
+  }
+  .municipal-information-topics {
+    width: 80%;
+    margin: 0 0 0 10%;
+    height: auto;
+  }
+  .municipal-information-topics img.images-topics {
+    width: 30%;
+    height: auto;
+  }
+  .municipal-information-topics h3.title-topics {
+    margin: 8px 0 8px 0;
+    font-size: 1.25em;
+  }
+  .municipal-information-topics p.text-topics {
+    font-size: 1em;
+    line-height: 120%;
+    width: 90%;
+    height: auto;
+    margin: 0 0 0 10px;
+  }
+  .seta-topics img {
+    width: 8%;
+    -ms-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+    margin: 15px 0 10px 0;
+  }
+  .button-sim#btn-simple {
+    width: 180px;
+    height: 32px;
+    font-size: 1em;
+  }
+  .button-sim#btn-full {
+    width: 180px;
+    height: 32px;
+    font-size: 1em;
+  }
+  .button-algeo {
+    width: 100px;
+    height: 32px;
+    font-size: 1em;
+  }
+  .latest-updates-col h2.title-col a {
+    font-weight: 500;
+    font-size: 0.8em;
+  }
+  .latest-updates-col h2.title-col a img {
+    width: 40px;
+  }
+  .table-statistic {
+    height: 260px;
+  }
+  .latest-updates-table tr.line-blue {
+    font-size: 1.1em;
+  }
+  .latest-updates-table tr.line-white {
+    font-size: 1em;
+  }
+  .button-down {
+    width: 100px;
+    height: 30px;
+    font-size: 0.9em;
+  }
+  .latest-updates-col .cont-col ul li a {
+    font-size: 1em;
+  }
+  .latest-updates-col .cont-col ul li.view a {
+    font-size: 1.1em;
+  }
+  .latest-updates-col .cont-col ul li.view a img {
+    width: 18px;
+    height: auto;
+  }
+  .contact .contact-left h2 {
+    font-size: 2.3em;
+    margin: 0 0 25px 0;
+  }
+  .contact-seplande {
+    text-align: center;
+  }
+  .contact .contact-seplande .contact-phone {
+    font-size: 2em;
+  }
+  .contact .contact-seplande .contact-address {
+    font-size: 1.2em;
+  }
+  .contact-form-text {
+    margin-top: -40px;
+    font-size: 1.3em;
+  }
+  .button-form {
+    width: 115px;
+    height: 33px;
+    font-size: 1em;
+    padding-bottom:10px;
+    margin-top: 10px;
+  }
+  .checks {
+    font-size: 0.9em;
+  }
+  .contact .contact-right h2 {
+    font-size: 1.8em;
+  }
+  .contact-lei {
+    width: 30%;
+    height: auto;
+    margin: -10px 0 0 0;
+    padding: 0;
+  }
+  .contact-lei a img{
+    width: 60%;
+  }
+  .contact-brasoes {
+    width: 70%;
+    height: auto;
+  }
+  .contact-brasoes img {
+    width: 80%;
+  }
+  .contact-right .geolocation {
+    width: 100%;
+    height: 260px;
+  }
+  .contact-links ul {
+    font-size: 0.9em;
+  }
+  .contact-license {
+    text-align: center;
+  }
+  .contact-license .image-license {
+    width: 100%;
+  }
+  .contact-license .text-license {
+    width: 90%;
+    margin-left: 5%;
+  }
+}
+/* MEDIA QUERIE MIN-WIDTH:600PX AND MAX-WIDTH:639PX PORTRAIT */ /*OK*/
+@media only screen and (min-width: 600px) and (max-width: 639px) and (orientation: portrait) {
+  .headertop {
+    font-size: 110%;
+  }
+  .selecttop img.bandeira {
+    width: 8%;
+    height: auto;
+    margin: -8px 2% 0 0;
+  }
+  .btn-primary-top {
+    font-size: 0.55em;
+  }
+  .section-body img.logo-portal {
+    width: 75%;
+    margin: 20px 0 0 0;
+  }
+  .search-title {
+    margin-top: 50px;
+  }
+  .search-input {
+    margin-top: 50px;
+  }
+  .section-body {
+    margin-top: 10%;
+  }
+  .section h1.title {
+    height: auto;
+    font-size: 2.8em;
+  }
+  .section h1.title#title-feature {
+    height: auto;
+    width: 80%;
+    margin-left: 10%;
+    font-size: 4.2em;
+    line-height: 130%;
+  }
+  .search-input input.form-control{
+    font-size: 1em;
+  }
+  .section p.context {
+    width: 80%;
+    margin-left: 10%;
+    font-size: 1.2em;
+    line-height: 240%;
+  }/*
+  .navbar {
+    bottom: 0;
+    margin-bottom: 0;
+    border-width: 1px 0 0;
+    border-radius: 0;
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    -webkit-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }*/
+  .navbar-brand img {
+    margin-top: 0;
+  }
+  .container-fluid .navbar-collapse {
+    width: 100%;
+    padding-left: 10%;
+    /*background: red;*/
+  }
+  .navbar-collapse ul.navbar-nav {
+    width: 90%;
+    height: auto;
+    margin: 0 0 0 5%;
+    padding-left: 0;
+  }
+  .navbar-collapse ul.navbar-nav li {
+    width: 17%;
+    height: auto;
+    display: inline-block;
+    float: left;
+    margin: 2% 7%;
+    padding: 0;
+    text-align: center;
+    text-transform: capitalize;
+    position: relative;
+  }
+  .navbar-collapse ul.navbar-nav li img {
+    width: 72%;
+  }
+  .navbar-collapse ul.navbar-nav li a {
+    width: 100%;
+    line-height: 130%;
+    font-size: 99%;
+  }
+  /*
+  .navbar-collapse ul.navbar-nav li.icon-portal {
+      display: none;
+  }*/
+  .section-body {
+    padding-top: 10px;
+  }
+  .municipal-information-cont {
+    margin-top: 5px;
+    padding: 0;
+    text-align: center;
+  }
+  .municipal-information-topics {
+    width: 80%;
+    margin: 0 0 0 10%;
+    height: auto;
+  }
+  .municipal-information-topics img.images-topics {
+    width: 30%;
+    height: auto;
+  }
+  .municipal-information-topics h3.title-topics {
+    margin: 8px 0 8px 0;
+    font-size: 1.25em;
+  }
+  .municipal-information-topics p.text-topics {
+    font-size: 1em;
+    line-height: 120%;
+    width: 90%;
+    height: auto;
+    margin: 0 0 0 10px;
+  }
+  .seta-topics img {
+    width: 8%;
+    -ms-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+    margin: 15px 0 10px 0;
+  }
+  .button-sim#btn-simple {
+    width: 180px;
+    height: 32px;
+    font-size: 1em;
+  }
+  .button-sim#btn-full {
+    width: 180px;
+    height: 32px;
+    font-size: 1em;
+  }
+  .button-algeo {
+    width: 100px;
+    height: 32px;
+    font-size: 1em;
+  }
+  .latest-updates-col h2.title-col a {
+    font-weight: 500;
+    font-size: 0.8em;
+  }
+  .latest-updates-col h2.title-col a img {
+    width: 40px;
+  }
+  .table-statistic {
+    height: 260px;
+  }
+  .latest-updates-table tr.line-blue {
+    font-size: 1.1em;
+  }
+  .latest-updates-table tr.line-white a {
+    font-size: 1em;
+  }
+  .button-down {
+    width: 100px;
+    height: 30px;
+    font-size: 0.9em;
+  }
+  .latest-updates-col .cont-col ul li a {
+    font-size: 1em;
+  }
+  .latest-updates-col .cont-col ul li.view a {
+    font-size: 1.1em;
+  }
+  .latest-updates-col .cont-col ul li.view a img {
+    width: 18px;
+    height: auto;
+  }
+  .contact .contact-left h2 {
+    font-size: 2.3em;
+    margin: 0 0 25px 0;
+  }
+  .contact-seplande {
+    text-align: center;
+  }
+  .contact .contact-seplande .contact-phone {
+    font-size: 2em;
+  }
+  .contact .contact-seplande .contact-address {
+    font-size: 1.2em;
+  }
+  .contact-form-text {
+    margin-top: -40px;
+    font-size: 1.3em;
+  }
+  .button-form {
+    width: 115px;
+    height: 33px;
+    font-size: 1em;
+    padding-bottom:10px;
+    margin-top: 10px;
+  }
+  .checks {
+    font-size: 0.9em;
+  }
+  .contact .contact-right h2 {
+    font-size: 1.8em;
+  }
+  .contact-lei {
+    width: 30%;
+    height: auto;
+    margin: -10px 0 0 0;
+    padding: 0;
+  }
+  .contact-lei a img{
+    width: 60%;
+  }
+  .contact-brasoes {
+    width: 70%;
+    height: auto;
+  }
+  .contact-brasoes img {
+    width: 80%;
+  }
+  .contact-right .geolocation {
+    width: 100%;
+    height: 260px;
+  }
+  .contact-links ul {
+    font-size: 0.9em;
+  }
+  .contact-license {
+    text-align: center;
+  }
+  .contact-license .image-license {
+    width: 100%;
+  }
+  .contact-license .text-license {
+    width: 90%;
+    margin-left: 5%;
+  }
+}
+/* MEDIA QUERIE MIN-WIDTH:321PX AND MAX-WIDTH:480PX LANDSCAPE */ /*OK*/
+@media only screen and (min-width: 321px) and (max-width: 480px) and (orientation: landscape) {
+  .headertop {
+    font-size: 110%;
+  }
+  .btn-primary-top {
+    background: rgba(4, 64, 103, 0.5);
+    font-size: 0.55em;
+  }
+  .section-body img.logo-portal {
+    width: 60%;
+    margin: 3px 0 0 0;
+  }
+  .section h1.title {
+    height: auto;
+    font-size: 2.1em;
+    margin-top: 0;
+  }
+  .section h1.title#title-feature {
+    height: auto;
+    font-size: 2.2em;
+    margin-top: -15px;
+  }
+  .search-input {
+    margin-top: 10px;
+  }
+  .search-input input.form-control{
+    font-size: 1.1em;
+  }
+  .section p.context {
+    font-size: 1em;
+  }/*
+  .navbar {
+    bottom: 0;
+    margin-bottom: 0;
+    border-width: 1px 0 0;
+    border-radius: 0;
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    -webkit-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }*/
+  .navbar-brand img{
+    margin-top: 0;
+  }
+  .container-fluid .navbar-collapse {
+    width: 100%;
+    margin-left: 0;
+  }
+  .navbar-collapse ul.navbar-nav {
+    width: 100%;
+    height: auto;
+    margin: 0;
+  }
+  .navbar-collapse ul.navbar-nav {
+    width: 100%;
+    height: auto;
+    margin: 0;
+  }
+  .navbar-collapse ul.navbar-nav li {
+    display: inline-block;
+    width: 14%;
+    height: auto;
+    margin: 0.2% 5%;
+    padding: 0;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 110%;
+    position: relative;
+  }
+  .navbar-collapse ul.navbar-nav li img {
+    width: 70%;
+  }
+  .navbar-collapse ul.navbar-nav li a {
+    width: 100%;
+    line-height: 130%;
+    top: 0;
+  }
+  .section-body {
+    padding-top: 15px;
+  }
+  .municipal-information-cont {
+    margin-top: 5px;
+    padding: 0;
+    text-align: center;
+  }
+  .municipal-information-topics {
+    width: 90%;
+    margin: 0 0 0 5%;
+    height: auto;
+    text-align: left;
+  }
+  .municipal-information-topics img.images-topics {
+    width: 22%;
+    height: auto;
+    text-align: center;
+  }
+  .municipal-information-topics h3.title-topics {
+    margin: 8px 0 8px 0;
+    font-size: 1.2em;
+    text-align: center;
+    width: 22%;
+  }
+  .municipal-information-topics p.text-topics {
+    font-size: 1.1em;
+    line-height: 120%;
+    height: auto;
+    margin: -100px 0 0 25%;
+    width: 70%;
+    float: left;
+  }
+  .seta-topics {
+    width: 22%;
+    text-align: center;
+    margin: 0 0 0 20px;
+  }
+  .seta-topics img {
+    width: 35%;
+    -ms-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+    margin: 15px 0 10px 0;
+    text-align: center;
+  }
+  .municipal-information-buttons a {
+    width: 48%;
+    float: left;
+    margin: 0 1% 0 1%;
+    text-align: center;
+  }
+  .clearfix {
+    width: 0;
+    height: 0;
+  }
+  .button-sim#btn-simple {
+    width: 160px;
+    height: 30px;
+    font-size: 0.9em;
+    float: right;
+  }
+  .button-sim#btn-full {
+    width: 160px;
+    height: 30px;
+    font-size: 0.9em;
+    float: left;
+  }
+  .button-algeo {
+    width: 90px;
+    height: 30px;
+    font-size: 0.9em;
+  }
+  .latest-updates-col h2.title-col a {
+    font-size: 0.75em;
+  }
+  .latest-updates-col h2.title-col a img {
+    width: 40px;
+  }
+  .table-statistic {
+    height: 260px;
+  }
+  .latest-updates-table tr.line-blue {
+    font-size: 1em;
+  }
+  .latest-updates-table tr.line-white {
+    font-size: 0.9em;
+  }
+  .button-down {
+    width: 110px;
+    height: 30px;
+    font-size: 1em;
+  }
+  .latest-updates-col .cont-col ul li a {
+    font-size: 1em;
+  }
+  .latest-updates-col .cont-col ul li.view a {
+    font-size: 1em;
+  }
+  .latest-updates-col .cont-col ul li.view a img {
+    width: 17px;
+    height: auto;
+  }
+  .contact .contact-left h2 {
+    font-size: 2em;
+    margin: 0 0 25px 0;
+  }
+  .contact-seplande {
+    text-align: center;
+  }
+  .contact .contact-seplande .contact-phone {
+    font-size: 2em;
+  }
+  .contact .contact-seplande .contact-address {
+    font-size: 1.2em;
+  }
+  .contact-form-text {
+    margin-top: -40px;
+    font-size: 1.3em;
+  }
+  .button-form {
+    width: 115px;
+    height: 33px;
+    font-size: 1em;
+    padding-bottom:10px;
+    margin-top: 10px;
+  }
+  .checks {
+    font-size: 1em;
+  }
+  .contact .contact-right h2 {
+    font-size: 1.6em;
+  }
+  .contact-lei {
+    width: 30%;
+    height: auto;
+    margin: -10px 0 0 0;
+    padding: 0;
+  }
+  .contact-lei a img{
+    width: 60%;
+  }
+  .contact-brasoes {
+    width: 70%;
+    height: auto;
+  }
+  .contact-brasoes img {
+    width: 80%;
+  }
+  .contact-right .geolocation {
+    width: 100%;
+    height: 260px;
+  }
+  .contact-links ul {
+    font-size: 1em;
+  }
+  .contact-license {
+    text-align: center;
+  }
+  .contact-license .image-license {
+    width: 100%;
+  }
+  .contact-license .text-license {
+    width: 90%;
+    margin-left: 5%;
+  }
+}
+/* MEDIA QUERIE MIN-WIDTH:481PX AND MAX-WIDTH:640PX LANDSCAPE */ /*OK*/
+@media only screen and (min-width: 481px) and (max-width: 640px) and (orientation: landscape) {
+  .headertop {
+    font-size: 110%;
+  }
+  .selecttop img.bandeira {
+    width: 7%;
+    height: auto;
+    margin: -8px 2% 0 0;
+  }
+  .btn-primary-top {
+    background: rgba(4, 64, 103, 0.5);
+    font-size: 0.55em;
+  }
+  .section-body img.logo-portal {
+    width: 55%;
+    margin: 0;
+  }
+  .section h1.title {
+    height: auto;
+    font-size: 2.25em;
+    margin-top: 0;
+  }
+  .section h1.title#title-feature {
+    height: auto;
+    font-size: 2.4em;
+    margin-top: -10px;
+  }
+  .search-input {
+    margin-top: 15px;
+  }
+  .search-input input.form-control{
+    font-size: 1.1em;
+  }
+  .section p.context {
+    font-size: 1em;
+  }/*
+  .navbar {
+    bottom: 0;
+    margin-bottom: 0;
+    border-width: 1px 0 0;
+    border-radius: 0;
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    -webkit-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }*/
+  .navbar-brand img {
+    margin-top: 0;
+  }
+  .container-fluid .navbar-collapse {
+    width: 100%;
+    margin-left: 0;
+  }
+  .navbar-collapse ul.navbar-nav {
+    width: 100%;
+    height: auto;
+    margin: 0;
+  }
+  .navbar-collapse ul.navbar-nav {
+    width: 100%;
+    height: auto;
+    margin: 0;
+  }
+  .navbar-collapse ul.navbar-nav li {
+    display: inline-block;
+    width: 16%;
+    height: auto;
+    margin: 0.5% 4.3%;
+    padding: 0;
+    text-align: center;
+    text-transform: capitalize;
+    position: relative;
+  }
+  .navbar-collapse ul.navbar-nav li img {
+    width: 65%;
+  }
+  .navbar-collapse ul.navbar-nav li a {
+    width: 70%;
+    line-height: 130%;
+    font-size: 100%;
+  }
+  .section-body {
+    padding-top: 15px;
+  }
+  .municipal-information-cont {
+    margin-top: 5px;
+    padding: 0;
+    text-align: center;
+  }
+  .municipal-information-topics {
+    width: 90%;
+    margin: 0 0 0 5%;
+    height: auto;
+    text-align: left;
+  }
+  .municipal-information-topics img.images-topics {
+    width: 22%;
+    height: auto;
+    text-align: center;
+  }
+  .municipal-information-topics h3.title-topics {
+    margin: 8px 0 8px 0;
+    font-size: 1.2em;
+    text-align: center;
+    width: 22%;
+  }
+  .municipal-information-topics p.text-topics {
+    font-size: 1.1em;
+    line-height: 120%;
+    height: auto;
+    margin: -100px 0 0 25%;
+    width: 70%;
+    float: left;
+  }
+  .seta-topics {
+    width: 22%;
+    text-align: center;
+    margin: 0 0 0 20px;
+  }
+  .seta-topics img {
+    width: 35%;
+    -ms-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+    margin: 15px 0 10px 0;
+    text-align: center;
+  }
+  .municipal-information-buttons a {
+    width: 48%;
+    float: left;
+    margin: 0 1% 0 1%;
+    text-align: center;
+  }
+  .clearfix {
+    width: 0;
+    height: 0;
+  }
+  .button-sim#btn-simple {
+    width: 160px;
+    height: 30px;
+    font-size: 0.9em;
+    float: right;
+  }
+  .button-sim#btn-full {
+    width: 160px;
+    height: 30px;
+    font-size: 0.9em;
+    float: left;
+  }
+  .button-algeo {
+    width: 90px;
+    height: 30px;
+    font-size: 0.9em;
+  }
+  .latest-updates-col h2.title-col a {
+    font-size: 0.75em;
+  }
+  .latest-updates-col h2.title-col a img {
+    width: 40px;
+  }
+  .table-statistic {
+    height: 260px;
+  }
+  .latest-updates-table tr.line-blue {
+    font-size: 1em;
+  }
+  .latest-updates-table tr.line-white {
+    font-size: 0.9em;
+  }
+  .button-down {
+    width: 110px;
+    height: 30px;
+    font-size: 1em;
+  }
+  .latest-updates-col .cont-col ul li a {
+    font-size: 1em;
+  }
+  .latest-updates-col .cont-col ul li.view a {
+    font-size: 1em;
+  }
+  .latest-updates-col .cont-col ul li.view a img {
+    width: 17px;
+    height: auto;
+  }
+  .contact .contact-left h2 {
+    font-size: 2.3em;
+    margin: 0 0 25px 0;
+  }
+  .contact-seplande {
+    text-align: center;
+  }
+  .contact .contact-seplande .contact-phone {
+    font-size: 2em;
+  }
+  .contact .contact-seplande .contact-address {
+    font-size: 1.2em;
+  }
+  .contact-form-text {
+    margin-top: -40px;
+    font-size: 1.3em;
+  }
+  .button-form {
+    width: 115px;
+    height: 33px;
+    font-size: 1em;
+    padding-bottom:10px;
+    margin-top: 10px;
+  }
+  .checks {
+    font-size: 1em;
+  }
+  .contact .contact-right h2 {
+    font-size: 1.6em;
+  }
+  .contact-lei {
+    width: 30%;
+    height: auto;
+    margin: -10px 0 0 0;
+    padding: 0;
+  }
+  .contact-lei a img{
+    width: 50%;
+  }
+  .contact-brasoes {
+    width: 70%;
+    height: auto;
+  }
+  .contact-brasoes img {
+    width: 70%;
+  }
+  .contact-right .geolocation {
+    width: 100%;
+    height: 260px;
+  }
+  .contact-links ul {
+    font-size: 1em;
+  }
+}
+/* MEDIA QUERIE MIN-WIDTH:640PX AND MAX-WIDTH:719PX PORTRAIT */ /*OK*/
+@media only screen and (min-width: 640px) and (max-width: 719px) and (orientation: portrait) {
+  .headertop {
+    font-size: 120%;
+  }
+  .selecttop img.bandeira{
+    width: 8%;
+    height: auto;
+    margin: -8px 2% 0 0;
+  }
+  .btn-primary-top {
+    font-size: 0.6em;
+  }
+  .section-body {
+    margin-top: 8%;
+  }
+  .section-body img.logo-portal {
+    width: 70%;
+    /*margin: 50px 0 0 0;*/
+  }
+  .section h1.title#title-feature {
+    height: auto;
+    font-size: 5em;
+    margin-top: 0;
+    line-height: 150%;
+  }
+  .section h1.title {
+    height: auto;
+    font-size: 2.8em;
+    margin-top: 25px;
+  }
+  .search-title {
+    margin-top: 55px;
+  }
+  .search-input {
+    margin-top: 55px;
+  }
+  .section p.context {
+    font-size: 1.4em;
+    line-height: 250%;
+    width: 80%;
+    margin: 10% 0 0 10%;
+  }/*
+  .navbar {
+    bottom: 0;
+    margin-bottom: 0;
+    border-width: 1px 0 0;
+    border-radius: 0;
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    -webkit-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }*/
+  .navbar-brand img{
+    margin-top: 0;
+  }
+  .container-fluid .navbar-collapse {
+    width: 100%;
+    margin-left: 0;
+  }
+  .navbar-collapse ul.navbar-nav {
+    width: 100%;
+    height: auto;
+    margin: 0;
+  }
+  .navbar-collapse ul.navbar-nav {
+    width: 100%;
+    height: auto;
+    margin: 0;
+  }
+  .navbar-collapse ul.navbar-nav li {
+    display: inline-block;
+    width: 14%;
+    height: auto;
+    margin: 4% 9%;
+    padding: 0;
+    text-align: center;
+    float: left;
+    text-transform: capitalize;
+    position: relative;
+    font-size: 110%;
+  }
+  .navbar-collapse ul.navbar-nav li img {
+    width: 75%;
+  }
+  .navbar-collapse ul.navbar-nav li a {
+    width: 100%;
+    line-height: 130%;
+    font-size: 100%;
+  }
+  .section-body {
+    padding-top: 10px;
+  }
+  .municipal-information-cont {
+    margin-top: 5px;
+    padding: 0;
+    text-align: center;
+  }
+  .municipal-information-topics {
+    width: 70%;
+    margin: 0 0 0 15%;
+    height: auto;
+  }
+  .municipal-information-topics img.images-topics {
+    width: 25%;
+    height: auto;
+  }
+  .municipal-information-topics h3.title-topics {
+    margin: 8px 0 8px 0;
+    font-size: 1.2em;
+  }
+  .municipal-information-topics p.text-topics {
+    font-size: 1em;
+    line-height: 120%;
+    width: 90%;
+    height: auto;
+    margin: 0 0 0 10px;
+  }
+  .seta-topics img {
+    width: 8%;
+    -ms-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+    margin: 15px 0 10px 0;
+  }
+  .button-sim#btn-simple {
+    width: 180px;
+    height: 32px;
+    font-size: 1em;
+  }
+  .button-sim#btn-full {
+    width: 180px;
+    height: 32px;
+    font-size: 1em;
+  }
+  .button-algeo {
+    width: 110px;
+    height: 32px;
+    font-size: 1.1em;
+    margin-top: 80px;
+  }
+  .latest-updates-col h2.title-col a {
+    font-size: 0.85em;
+  }
+  .latest-updates-col h2.title-col a img {
+    width: 40px;
+  }
+  .latest-updates-col {
+    margin-top: 60px;
+  }
+  .table-statistic {
+    height: 380px;
+  }
+  .latest-updates-table tr.line-blue {
+    font-size: 1.2em;
+  }
+  .latest-updates-table tr.line-white {
+    font-size: 1.1em;
+  }
+  .button-down {
+    width: 120px;
+    height: 34px;
+    font-size: 1.1em;
+  }
+  .latest-updates-col .cont-col ul li a {
+    font-size: 1.1em;
+  }
+  .latest-updates-col .cont-col ul li.view a {
+    font-size: 1.1em;
+  }
+  .latest-updates-col .cont-col ul li.view a img {
+    width: 18px;
+    height: auto;
+  }
+  .contact .contact-left h2 {
+    font-size: 2.3em;
+    margin: 0 0 25px 0;
+  }
+  .contact-seplande {
+    text-align: center;
+  }
+  .contact .contact-seplande .contact-phone {
+    font-size: 2em;
+  }
+  .contact .contact-seplande .contact-address {
+    font-size: 1.2em;
+  }
+  .contact-form-text {
+    margin-top: -40px;
+    font-size: 1.3em;
+  }
+  .button-form {
+    width: 115px;
+    height: 33px;
+    font-size: 1em;
+    padding-bottom:10px;
+    margin-top: 10px;
+  }
+  .checks {
+    font-size: 0.9em;
+  }
+  .contact .contact-right h2 {
+    font-size: 1.6em;
+  }
+  .contact-lei {
+    width: 30%;
+    height: auto;
+    margin: -10px 0 0 0;
+    padding: 0;
+  }
+  .contact-lei a img{
+    width: 50%;
+  }
+  .contact-brasoes {
+    width: 70%;
+    height: auto;
+  }
+  .contact-brasoes img {
+    width: 70%;
+  }
+  .contact-right .geolocation {
+    width: 100%;
+    height: 260px;
+  }
+  .contact-links ul {
+    font-size: 0.9em;
+  }
+}
+/* MEDIA QUERIE MIN-WIDTH:720PX AND MAX-WIDTH:767PX PORTRAIT */ /*OK*/
+@media only screen and (min-width: 720px) and (max-width: 767px) and (orientation: portrait) {
+  .headertop {
+    font-size: 120%;
+  }
+  .selecttop img.bandeira{
+    width: 7%;
+    height: auto;
+    margin: -8px 2% 0 0;
+  }
+  .btn-primary-top {
+    font-size: 0.6em;
+  }
+  .section-body {
+    margin-top: 8%;
+  }
+  .section-body img.logo-portal {
+    width: 70%;
+    /*margin: 50px 0 0 0;*/
+  }
+  .section h1.title#title-feature {
+    width: 80%;
+    margin-left: 10%;
+    height: auto;
+    font-size: 5em;
+    margin-top: 0;
+    line-height: 150%;
+  }
+  .section h1.title {
+    height: auto;
+    font-size: 2.8em;
+    margin-top: 30px;
+  }
+  .search-title {
+    margin-top: 55px;
+  }
+  .search-input {
+    margin-top: 55px;
+  }
+  .section p.context {
+    font-size: 1.5em;
+    line-height: 260%;
+    width: 80%;
+    margin: 10% 0 0 10%;
+  }/*
+  .navbar {
+    bottom: 0;
+    margin-bottom: 0;
+    border-width: 1px 0 0;
+    border-radius: 0;
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    -webkit-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }*/
+  .navbar-brand img{
+    margin-top: 0;
+  }
+  .container-fluid .navbar-collapse {
+    width: 100%;
+    margin-left: 0;
+  }
+  .navbar-collapse ul.navbar-nav {
+    width: 100%;
+    height: auto;
+    margin: 0;
+  }
+  .navbar-collapse ul.navbar-nav {
+    width: 100%;
+    height: auto;
+    margin: 0;
+  }
+  .navbar-collapse ul.navbar-nav li {
+    display: inline-block;
+    width: 14.5%;
+    height: auto;
+    margin: 2% 9%;
+    padding: 0.5%;
+    text-align: center;
+    float: left;
+    text-transform: capitalize;
+    position: relative;
+  }
+  .navbar-collapse ul.navbar-nav li img {
+    width: 75%;
+  }
+  .navbar-collapse ul.navbar-nav li a {
+    width: 100%;
+    line-height: 130%;
+    font-size: 110%;
+  }
+  .section-body {
+    padding-top: 10px;
+  }
+  .municipal-information-cont {
+    margin-top: 5px;
+    padding: 0;
+    text-align: center;
+  }
+  .municipal-information-topics {
+    width: 70%;
+    margin: 0 0 0 15%;
+    height: auto;
+  }
+  .municipal-information-topics img.images-topics {
+    width: 25%;
+    height: auto;
+  }
+  .municipal-information-topics h3.title-topics {
+    margin: 8px 0 8px 0;
+    font-size: 1.2em;
+  }
+  .municipal-information-topics p.text-topics {
+    font-size: 1em;
+    line-height: 120%;
+    width: 90%;
+    height: auto;
+    margin: 0 0 0 10px;
+  }
+  .seta-topics img {
+    width: 8%;
+    -ms-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+    margin: 15px 0 10px 0;
+  }
+  .button-sim#btn-simple {
+    width: 180px;
+    height: 32px;
+    font-size: 1em;
+  }
+  .button-sim#btn-full {
+    width: 180px;
+    height: 32px;
+    font-size: 1em;
+  }
+  .button-algeo {
+    width: 110px;
+    height: 32px;
+    font-size: 1.1em;
+    margin-top: 80px;
+  }
+  .latest-updates-col h2.title-col a {
+    font-size: 0.85em;
+  }
+  .latest-updates-col h2.title-col a img {
+    width: 40px;
+  }
+  .latest-updates-col {
+    margin-top: 60px;
+  }
+  .table-statistic {
+    height: 380px;
+  }
+  .latest-updates-table tr.line-blue {
+    font-size: 1.2em;
+  }
+  .latest-updates-table tr.line-white {
+    font-size: 1.1em;
+  }
+  .button-down {
+    width: 120px;
+    height: 34px;
+    font-size: 1.1em;
+  }
+  .latest-updates-col .cont-col ul li a {
+    font-size: 1.1em;
+  }
+  .latest-updates-col .cont-col ul li.view a {
+    font-size: 1.1em;
+  }
+  .latest-updates-col .cont-col ul li.view a img {
+    width: 18px;
+    height: auto;
+  }
+  .contact .contact-left h2 {
+    font-size: 2.3em;
+    margin: 0 0 25px 0;
+  }
+  .contact-seplande {
+    text-align: center;
+  }
+  .contact .contact-seplande .contact-phone {
+    font-size: 2em;
+  }
+  .contact .contact-seplande .contact-address {
+    font-size: 1.2em;
+  }
+  .contact-form-text {
+    margin-top: -40px;
+    font-size: 1.3em;
+  }
+  .button-form {
+    width: 115px;
+    height: 33px;
+    font-size: 1em;
+    padding-bottom:10px;
+    margin-top: 10px;
+  }
+  .checks {
+    font-size: 0.9em;
+  }
+  .contact .contact-right h2 {
+    font-size: 1.6em;
+  }
+  .contact-lei {
+    width: 30%;
+    height: auto;
+    margin: -10px 0 0 0;
+    padding: 0;
+  }
+  .contact-lei a img{
+    width: 60%;
+    height: auto;
+  }
+  .contact-brasoes {
+    width: 70%;
+    height: auto;
+  }
+  .contact-brasoes img {
+    width: 70%;
+  }
+  .contact-right .geolocation {
+    width: 100%;
+    height: 260px;
+  }
+  .contact-links ul {
+    font-size: 0.9em;
+  }
+}
+/* MEDIA QUERIE MIN-WIDTH:768PX AND MAX-WIDTH:799PX PORTRAIT */ /*OK*/
+@media only screen and (min-width: 768px) and (max-width: 799px) and (orientation: portrait) {
+  .navbar-nav {
+    width: 100%;
+    /* margin: 7.5px -15px; */
+  }
+  .navbar-nav > li > a {
+    /* padding-top: 10px; */
+    padding: 2% 0 2% 0;
+    /* padding-bottom: 10px; */
+    line-height: 20px;
+  }
+  .headertop {
+    font-size: 130%;
+  }
+  .selecttop img.bandeira{
+    width: 6%;
+    height: auto;
+    margin: -8px 2% 0 0;
+  }
+  .btn-primary-top {
+    font-size: 0.6em;
+  }
+  .section-body {
+    margin-top: 5%;
+  }
+  .section-body img.logo-portal {
+    width: 70%;
+    /*margin: 50px 0 0 0;*/
+  }
+  .section h1.title#title-feature {
+    width: 80%;
+    margin-left: 10%;
+    height: auto;
+    font-size: 5em;
+    margin-top: 0;
+    line-height: 150%;
+  }
+  .section h1.title {
+    height: auto;
+    font-size: 2.8em;
+    margin-top: 30px;
+  }
+  .search-title {
+    margin-top: 55px;
+  }
+  .search-input {
+    margin-top: 55px;
+  }
+  .section p.context {
+    font-size: 1.5em;
+    line-height: 260%;
+    width: 80%;
+    margin: 10% 0 0 10%;
+  }/*
+  .navbar {
+    bottom: 0;
+    margin-bottom: 0;
+    border-width: 1px 0 0;
+    border-radius: 0;
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    -webkit-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }*/
+  .navbar-brand img{
+    margin-top: 0;
+  }
+  .container-fluid .navbar-collapse {
+    width: 100%;
+    margin-left: 0;
+  }
+  .navbar-collapse ul.navbar-nav {
+    width: 100%;
+    height: auto;
+  }
+  .navbar-collapse ul.navbar-nav li {
+    width: 12.4%;
+    height: auto;
+    margin: 3% 10%;
+    padding: 0;
+    text-align: center;
+    float: left;
+    text-transform: capitalize;
+    position: relative;
+    display: inline-block;
+  }
+  .navbar-collapse ul.navbar-nav li img {
+    width: 75%;
+  }
+  .navbar-collapse ul.navbar-nav li a {
+    width: 100%;
+    line-height: 130%;
+    font-size: 115%;
+  }
+  .section-body {
+    padding-top: 10px;
+  }
+  .municipal-information-cont {
+    margin-top: 5px;
+    padding: 0;
+    text-align: center;
+  }
+  .municipal-information-topics {
+    width: 70%;
+    margin: 0 0 0 15%;
+    height: auto;
+  }
+  .municipal-information-topics img.images-topics {
+    width: 25%;
+    height: auto;
+  }
+  .municipal-information-topics h3.title-topics {
+    margin: 8px 0 8px 0;
+    font-size: 1.2em;
+  }
+  .municipal-information-topics p.text-topics {
+    font-size: 1em;
+    line-height: 120%;
+    width: 90%;
+    height: auto;
+    margin: 0 0 0 10px;
+  }
+  .seta-topics img {
+    width: 8%;
+    -ms-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+    margin: 15px 0 10px 0;
+  }
+  .button-sim#btn-simple {
+    width: 180px;
+    height: 32px;
+    font-size: 1em;
+  }
+  .button-sim#btn-full {
+    width: 180px;
+    height: 32px;
+    font-size: 1em;
+  }
+  .button-algeo {
+    width: 110px;
+    height: 32px;
+    font-size: 1.1em;
+    margin-top: 80px;
+  }
+  .latest-updates-col h2.title-col a {
+    font-size: 0.85em;
+  }
+  .latest-updates-col h2.title-col a img {
+    width: 40px;
+  }
+  .latest-updates-col {
+    margin-top: 60px;
+  }
+  .table-statistic {
+    height: 380px;
+  }
+  .latest-updates-table tr.line-blue {
+    font-size: 1.2em;
+  }
+  .latest-updates-table tr.line-white {
+    font-size: 1.1em;
+  }
+  .button-down {
+    width: 120px;
+    height: 34px;
+    font-size: 1.1em;
+  }
+  .latest-updates-col .cont-col ul li a {
+    font-size: 1.1em;
+  }
+  .latest-updates-col .cont-col ul li.view a {
+    font-size: 1.1em;
+  }
+  .latest-updates-col .cont-col ul li.view a img {
+    width: 18px;
+    height: auto;
+  }
+  .contact .contact-left h2 {
+    font-size: 2.3em;
+    margin: 0 0 25px 0;
+  }
+  .contact-seplande {
+    text-align: center;
+  }
+  .contact .contact-seplande .contact-phone {
+    font-size: 2em;
+  }
+  .contact .contact-seplande .contact-address {
+    font-size: 1.2em;
+  }
+  .contact-form-text {
+    margin-top: -40px;
+    font-size: 1.3em;
+  }
+  .button-form {
+    width: 115px;
+    height: 33px;
+    font-size: 1em;
+    padding-bottom:10px;
+    margin-top: 10px;
+  }
+  .checks {
+    font-size: 0.9em;
+  }
+  .contact .contact-right h2 {
+    font-size: 1.6em;
+  }
+  .contact-lei {
+    width: 30%;
+    height: auto;
+    margin: -10px 0 0 0;
+    padding: 0;
+  }
+  .contact-lei a img{
+    width: 60%;
+    height: auto;
+  }
+  .contact-brasoes {
+    width: 70%;
+    height: auto;
+  }
+  .contact-brasoes img {
+    width: 70%;
+  }
+  .contact-right .geolocation {
+    width: 100%;
+    height: 260px;
+  }
+  .contact-links ul {
+    font-size: 0.9em;
+  }
+}
+/* MEDIA QUERIE MIN-WIDTH:800PX AND MAX-WIDTH:991PX PORTRAIT */ /*OK*/
+@media only screen and (min-width: 800px) and (max-width: 991px) and (orientation: portrait) {
+  .navbar-nav {
+    width: 100%;
+    /* margin: 7.5px -15px; */
+  }
+  .navbar-nav > li > a {
+    /* padding-top: 10px; */
+    padding: 2% 0 2% 0;
+    /* padding-bottom: 10px; */
+    line-height: 20px;
+  }
+  .headertop {
+    font-size: 130%;
+  }
+  .selecttop img.bandeira{
+    width: 5.5%;
+    height: auto;
+    margin: -5px 2% 0 0;
+  }
+  .btn-primary-top {
+    font-size: 0.7em;
+  }
+  .section-body {
+    margin-top: 10%;
+    padding-top: 10px;
+  }
+  .section-body img.logo-portal {
+    width: 80%;
+  }
+  .section h1.title#title-feature {
+    width: 90%;
+    margin-left: 5%;
+    height: auto;
+    font-size: 5.5em;
+    margin-top: 0;
+    line-height: 160%;
+  }
+  .section h1.title {
+    width: 100%;
+    height: auto;
+    font-size: 3.6em;
+    margin-top: 30px;
+  }
+  .search-title {
+    margin-top: 55px;
+  }
+  .search-input {
+    margin-top: 55px;
+  }
+  .section p.context {
+    font-size: 1.7em;
+    line-height: 270%;
+    width: 80%;
+    margin: 10% 0 0 10%;
+  }/*
+  .navbar {
+    bottom: 0;
+    margin-bottom: 0;
+    border-width: 1px 0 0;
+    border-radius: 0;
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    -webkit-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }*/
+  .navbar-brand img{
+    margin-top: 0;
+  }
+  .container-fluid .navbar-collapse {
+    width: 100%;
+    margin-left: 0;
+  }
+  .navbar-collapse ul.navbar-nav {
+    width: 100%;
+    height: auto;
+  }
+  .navbar-collapse ul.navbar-nav li {
+    width: 12.5%;
+    height: auto;
+    margin: 4% 10.4%;
+    padding: 0;
+    text-align: center;
+    float: left;
+    text-transform: capitalize;
+    position: relative;
+    display: inline-block;
+  }
+  .navbar-collapse ul.navbar-nav li img {
+    width: 75%;
+  }
+  .navbar-collapse ul.navbar-nav li a {
+    width: 100%;
+    line-height: 130%;
+    font-size: 115%;
+  }
+  .municipal-information-cont {
+    margin-top: 5px;
+    padding: 0;
+    text-align: center;
+  }
+  .municipal-information-topics {
+    width: 70%;
+    margin: 0 0 0 15%;
+    height: auto;
+  }
+  .municipal-information-topics img.images-topics {
+    width: 25%;
+    height: auto;
+  }
+  .municipal-information-topics h3.title-topics {
+    margin: 8px 0 8px 0;
+    font-size: 1.3em;
+  }
+  .municipal-information-topics p.text-topics {
+    font-size: 1.1em;
+    line-height: 120%;
+    width: 80%;
+    height: auto;
+    margin: 0 0 0 10%;
+  }
+  .seta-topics img {
+    width: 8%;
+    -ms-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+    margin: 15px 0 10px 0;
+  }
+  .button-sim#btn-simple {
+    width: 220px;
+    height: 34px;
+    font-size: 1.2em;
+  }
+  .button-sim#btn-full {
+    width: 220px;
+    height: 34px;
+    font-size: 1.2em;
+  }
+  .button-algeo {
+    width: 120px;
+    height: 34px;
+    font-size: 1.2em;
+    margin-top: 80px;
+  }
+  .latest-updates-col h2.title-col a {
+    font-size: 0.95em;
+  }
+  .latest-updates-col h2.title-col a img {
+    width: 50px;
+  }
+  .latest-updates-col {
+    margin-top: 70px;
+  }
+  .table-statistic {
+    height: 400px;
+  }
+  .latest-updates-table tr.line-blue {
+    font-size: 1.3em;
+  }
+  .latest-updates-table tr.line-white {
+    font-size: 1em;
+  }
+  .button-down {
+    width: 140px;
+    height: 34px;
+    font-size: 1.2em;
+  }
+  .latest-updates-col .cont-col ul li a {
+    font-size: 1.2em;
+  }
+  .latest-updates-col .cont-col ul li.view a {
+    font-size: 1.2em;
+  }
+  .latest-updates-col .cont-col ul li.view a img {
+    width: 20px;
+    height: auto;
+  }
+  .contact .contact-left h2 {
+    font-size: 2.6em;
+    margin: 0 0 25px 0;
+  }
+  .contact-seplande {
+    text-align: center;
+  }
+  .contact .contact-seplande .contact-phone {
+    font-size: 2.2em;
+  }
+  .contact .contact-seplande .contact-address {
+    font-size: 1.4em;
+  }
+  .contact-form-text {
+    margin-top: -40px;
+    font-size: 1.4em;
+  }
+  .button-form {
+    width: 125px;
+    height: 35px;
+    font-size: 1.1em;
+    padding-bottom:10px;
+    margin-top: 10px;
+  }
+  .checks {
+    font-size: 0.9em;
+  }
+  .contact .contact-right h2 {
+    font-size: 1.7em;
+  }
+  .contact-lei {
+    width: 30%;
+    height: auto;
+    margin: -10px 0 0 0;
+    padding: 0;
+  }
+  .contact-lei a img {
+    width: 50%;
+    height: auto;
+  }
+  .contact-brasoes {
+    width: 70%;
+    height: auto;
+  }
+  .contact-brasoes img {
+    width: 60%;
+  }
+  .contact-right .geolocation {
+    width: 100%;
+    height: 280px;
+  }
+  .contact-links ul {
+    font-size: 1em;
+  }
+}
+/* MEDIA QUERIE MIN-WIDTH:641PX AND MAX-WIDTH:800PX LANDSCAPE */ /*OK*/
+@media only screen and (min-width: 641px) and (max-width: 800px) and (orientation: landscape) {
+  .headertop {
+    font-size: 110%;
+  }
+  .selecttop img.bandeira {
+    width: 6%;
+    height: auto;
+    margin: -8px 2% 0 0;
+  }
+  .btn-primary-top {
+    background: rgba(4, 64, 103, 0.5);
+    font-size: 0.55em;
+  }
+  .section-body img.logo-portal {
+    width: 55%;
+    margin: 0;
+  }
+  .section h1.title {
+    height: auto;
+    font-size: 2.4em;
+    /*margin-top: 0;*/
+  }
+  .section h1.title#title-feature {
+    height: auto;
+    font-size: 3.2em;
+    margin-top: -5px;
+  }
+  .search-input {
+    margin-top: 20px;
+  }
+  .search-input input.form-control{
+    font-size: 1.1em;
+  }
+  .section p.context {
+    font-size: 1em;
+    line-height: 250%;
+  }/*
+  .navbar {
+    bottom: 0;
+    margin-bottom: 0;
+    border-width: 1px 0 0;
+    border-radius: 0;
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    -webkit-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }*/
+  .navbar-brand img {
+    margin-top: 0;
+  }
+  .container-fluid .navbar-collapse {
+    width: 100%;
+    margin-left: 0;
+  }
+  .navbar-collapse ul.navbar-nav {
+    width: 100%;
+    height: auto;
+    margin: 0;
+  }
+  .navbar-collapse ul.navbar-nav {
+    width: 100%;
+    height: auto;
+    margin: 0;
+  }
+  .navbar-collapse ul.navbar-nav li {
+    display: inline-block;
+    width: 15.5%;
+    height: auto;
+    margin: 0.5% 4.5%;
+    padding: 0;
+    text-align: center;
+    text-transform: capitalize;
+    position: relative;
+  }
+  .navbar-collapse ul.navbar-nav li img {
+    width: 65%;
+  }
+  .navbar-collapse ul.navbar-nav li a {
+    width: 70%;
+    line-height: 130%;
+    font-size: 110%;
+  }
+  .section-body {
+    padding-top: 15px;
+  }
+  .municipal-information-cont {
+    margin-top: 5px;
+    padding: 0;
+    text-align: center;
+  }
+  .municipal-information-topics {
+    width: 80%;
+    margin: 0 0 0 10%;
+    height: auto;
+    text-align: left;
+  }
+  .municipal-information-topics img.images-topics {
+    width: 20%;
+    height: auto;
+    text-align: center;
+  }
+  .municipal-information-topics h3.title-topics {
+    margin: 8px 0 8px 0;
+    font-size: 1.3em;
+    text-align: center;
+    width: 20%;
+  }
+  .municipal-information-topics p.text-topics {
+    font-size: 1.1em;
+    line-height: 120%;
+    height: auto;
+    margin: -100px 0 0 25%;
+    width: 70%;
+    float: left;
+  }
+  .seta-topics {
+    width: 20%;
+    text-align: center;
+    margin: 0 0 0 60px;
+  }
+  .seta-topics img {
+    width: 35%;
+    -ms-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+    margin: 15px 0 10px 0;
+    text-align: center;
+  }
+  .municipal-information-buttons a {
+    width: 48%;
+    float: left;
+    margin: 0 1% 0 1%;
+    text-align: center;
+  }
+  .clearfix {
+    width: 0;
+    height: 0;
+  }
+  .button-sim#btn-simple {
+    width: 160px;
+    height: 30px;
+    font-size: 0.9em;
+    float: right;
+  }
+  .button-sim#btn-full {
+    width: 160px;
+    height: 30px;
+    font-size: 0.9em;
+    float: left;
+  }
+  .button-algeo {
+    width: 90px;
+    height: 30px;
+    font-size: 0.9em;
+  }
+  .latest-updates-col h2.title-col a {
+    font-size: 0.75em;
+  }
+  .latest-updates-col h2.title-col a img {
+    width: 40px;
+  }
+  .table-statistic {
+    height: 260px;
+  }
+  .latest-updates-table tr.line-blue {
+    font-size: 1em;
+  }
+  .latest-updates-table tr.line-white {
+    font-size: 0.9em;
+  }
+  .button-down {
+    width: 110px;
+    height: 30px;
+    font-size: 1em;
+  }
+  .latest-updates-col .cont-col ul li a {
+    font-size: 1em;
+  }
+  .latest-updates-col .cont-col ul li.view a {
+    font-size: 1em;
+  }
+  .latest-updates-col .cont-col ul li.view a img {
+    width: 17px;
+    height: auto;
+  }
+  .contact .contact-left h2 {
+    font-size: 2.3em;
+    margin: 0 0 25px 0;
+  }
+  .contact-seplande {
+    text-align: center;
+  }
+  .contact .contact-seplande .contact-phone {
+    font-size: 2em;
+  }
+  .contact .contact-seplande .contact-address {
+    font-size: 1.2em;
+  }
+  .contact-form-text {
+    margin-top: -40px;
+    font-size: 1.3em;
+  }
+  .button-form {
+    width: 115px;
+    height: 33px;
+    font-size: 1em;
+    padding-bottom:10px;
+    margin-top: 10px;
+  }
+  .checks {
+    font-size: 1em;
+  }
+  .contact .contact-right h2 {
+    font-size: 1.6em;
+  }
+  .contact-lei {
+    width: 30%;
+    height: auto;
+    margin: -10px 0 0 0;
+    padding: 0;
+  }
+  .contact-lei a img{
+    width: 45%;
+  }
+  .contact-brasoes {
+    width: 70%;
+    height: auto;
+  }
+  .contact-brasoes img {
+    width: 60%;
+  }
+  .contact-right .geolocation {
+    width: 100%;
+    height: 260px;
+  }
+  .contact-links ul {
+    font-size: 1em;
+  }
+}
+/* MEDIA QUERIE MIN-WIDTH:801PX AND MAX-WIDTH:991PX LANDSCAPE */ /*OK*/
+@media only screen and (min-width: 801px) and (max-width: 991px) and (orientation: landscape) {
+  .headertop {
+    font-size: 110%;
+  }
+  .selecttop img.bandeira {
+    width: 5%;
+    height: auto;
+    margin: -8px 2% 0 0;
+  }
+  .btn-primary-top {
+    background: rgba(4, 64, 103, 0.5);
+    font-size: 0.55em;
+  }
+  .section-body img.logo-portal {
+    width: 55%;
+    margin: 0;
+  }
+  .section h1.title#title-feature {
+    height: auto;
+    font-size: 4.2em;
+    line-height: 130%;
+  }
+  .section h1.title {
+    height: auto;
+    font-size: 3.2em;
+  }
+  .search-input {
+    margin-top: 50px;
+  }
+  .search-input input.form-control{
+    font-size: 1.2em;
+  }
+  .section p.context {
+    font-size: 1.2em;
+    line-height: 250%;
+  }/*
+  .navbar {
+    bottom: 0;
+    margin-bottom: 0;
+    border-width: 1px 0 0;
+    border-radius: 0;
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    -webkit-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }*/
+  .navbar-brand img {
+    margin-top: 0;
+  }
+  .container-fluid .navbar-collapse {
+    width: 100%;
+    margin-left: 0;
+  }
+  .navbar-collapse ul.navbar-nav {
+    width: 100%;
+    height: auto;
+    margin: 0;
+  }
+  .navbar-collapse ul.navbar-nav {
+    width: 100%;
+    height: auto;
+    margin: 0;
+  }
+  .navbar-collapse ul.navbar-nav li {
+    display: inline-block;
+    width: 14%;
+    height: auto;
+    margin: 0.5% 5.2%;
+    padding: 0;
+    text-align: center;
+    text-transform: capitalize;
+    position: relative;
+  }
+  .navbar-collapse ul.navbar-nav li img {
+    width: 70%;
+  }
+  .navbar-collapse ul.navbar-nav li a {
+    width: 70%;
+    line-height: 130%;
+    font-size: 112%;
+  }
+  .section-body {
+    padding-top: 15px;
+  }
+  .municipal-information-cont {
+    margin-top: 5px;
+    padding: 0;
+    text-align: center;
+  }
+  .municipal-information-topics {
+    width: 80%;
+    margin: 0 0 0 10%;
+    height: auto;
+    text-align: left;
+  }
+  .municipal-information-topics img.images-topics {
+    width: 20%;
+    height: auto;
+    text-align: center;
+  }
+  .municipal-information-topics h3.title-topics {
+    margin: 8px 0 8px 0;
+    font-size: 1.3em;
+    text-align: center;
+    width: 20%;
+  }
+  .municipal-information-topics p.text-topics {
+    font-size: 1.1em;
+    line-height: 120%;
+    height: auto;
+    margin: -100px 0 0 25%;
+    width: 70%;
+    float: left;
+  }
+  .seta-topics {
+    width: 20%;
+    text-align: center;
+    margin: 0 0 0 60px;
+  }
+  .seta-topics img {
+    width: 35%;
+    -ms-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+    margin: 15px 0 10px 0;
+    text-align: center;
+  }
+  .municipal-information-buttons a {
+    width: 48%;
+    float: left;
+    margin: 0 1% 0 1%;
+    text-align: center;
+  }
+  .clearfix {
+    width: 0;
+    height: 0;
+  }
+  .button-sim#btn-simple {
+    width: 160px;
+    height: 30px;
+    font-size: 0.9em;
+    float: right;
+  }
+  .button-sim#btn-full {
+    width: 160px;
+    height: 30px;
+    font-size: 0.9em;
+    float: left;
+  }
+  .button-algeo {
+    width: 90px;
+    height: 30px;
+    font-size: 0.9em;
+  }
+  .latest-updates-col h2.title-col a {
+    font-size: 0.75em;
+  }
+  .latest-updates-col h2.title-col a img {
+    width: 40px;
+  }
+  .table-statistic {
+    height: 260px;
+  }
+  .latest-updates-table tr.line-blue {
+    font-size: 1em;
+  }
+  .latest-updates-table tr.line-white {
+    font-size: 0.9em;
+  }
+  .button-down {
+    width: 110px;
+    height: 30px;
+    font-size: 1em;
+  }
+  .latest-updates-col .cont-col ul li a {
+    font-size: 1em;
+  }
+  .latest-updates-col .cont-col ul li.view a {
+    font-size: 1em;
+  }
+  .latest-updates-col .cont-col ul li.view a img {
+    width: 17px;
+    height: auto;
+  }
+  .contact .contact-left h2 {
+    font-size: 2.3em;
+    margin: 0 0 25px 0;
+  }
+  .contact-seplande {
+    text-align: center;
+  }
+  .contact .contact-seplande .contact-phone {
+    font-size: 2em;
+  }
+  .contact .contact-seplande .contact-address {
+    font-size: 1.2em;
+  }
+  .contact-form-text {
+    margin-top: -40px;
+    font-size: 1.3em;
+  }
+  .button-form {
+    width: 115px;
+    height: 33px;
+    font-size: 1em;
+    padding-bottom:10px;
+    margin-top: 10px;
+  }
+  .checks {
+    font-size: 1em;
+  }
+  .contact .contact-right h2 {
+    font-size: 1.6em;
+  }
+  .contact-lei {
+    width: 30%;
+    height: auto;
+    margin: -10px 0 0 0;
+    padding: 0;
+  }
+  .contact-lei a img{
+    width: 45%;
+  }
+  .contact-brasoes {
+    width: 70%;
+    height: auto;
+  }
+  .contact-brasoes img {
+    width: 60%;
+  }
+  .contact-right .geolocation {
+    width: 100%;
+    height: 260px;
+  }
+  .contact-links ul {
+    font-size: 1em;
+  }
+}
+/* MEDIA QUERIE MIN-WIDTH:992PX AND MAX-WIDTH:1024PX LANDSCAPE */ /*OK*/
+@media only screen and (min-width: 992px) and (max-width: 1118px) and (orientation: landscape) {
+  .selecttop img.bandeira {
+    width: 11%;
+    height: auto;
+    margin: -8px 2% 0 0;
+  }
+  .section h1.title#title-feature {
+    height: auto;
+    font-size: 4.6em;
+    line-height: 130%;
+    margin-top: 0;
+  }
+  .section h1.title {
+    height: auto;
+    font-size: 3.6em;
+  }
+  .search-input {
+    margin-top: 20px;
+  }
+  .section p.context {
+    font-size: 1.3em;
+    line-height: 250%;
+  }
+  .navbar-brand {
+    width: 3%;
+    float: left;
+  }
+  .navbar-brand img {
+    margin-top: 0;
+  }
+  .navbar-collapse {
+    width: 95%;
+    float: left;
+    padding-left: 2%;
+    padding-right: 0;
+  }
+  .navbar-nav li {
+    text-transform: uppercase;
+  }
+  .navbar-nav li a {
+    text-align: center;
+    font-size: 92%;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    opacity: 0.9;
+  }
+  .navbar-nav li a:hover {
+    opacity: 1;
+  }
+  .navbar-nav li a img {
+    width: 21px;
+    display: none;
+  }
+  .navbar-nav li.icon-about {
+    width: 6%;
+    height: auto;
+    /* padding: 3% 2% 2% 2%; */
+    margin: 0;
+    /*background: blue;*/
+    padding: 1.5% 0 1% 0;
+  }
+  .navbar-nav li.icon-municipal {
+    width: 17%;
+    height: auto;
+    /* padding: 2% 0 2% 0; */
+    margin: 0;
+    /*background: red;*/
+    padding: 1.5% 0 1% 0;
+  }
+  .navbar-nav li.icon-algeo {
+    width: 16%;
+    height: auto;
+    /* padding: 2% 0 2% 0; */
+    margin: 0;
+    /*background: blue;*/
+    padding: 1.5% 0 1% 0;
+  }
+  .navbar-nav li.icon-maps {
+    width: 5%;
+    height: auto;
+    /* padding: 2% 0 2% 0; */
+    margin: 0;
+    /*background: red;*/
+    padding: 1.5% 0 1% 0;
+  }
+  .navbar-nav li.icon-publications {
+    width: 10%;
+    height: auto;
+    /* padding: 2% 0 2% 0; */
+    margin: 0;
+    /*background: blue;*/
+    padding: 1.5% 0 1% 0;
+  }
+  .navbar-nav li.icon-updates {
+    width: 17%;
+    height: auto;
+    /* padding: 2% 0 2% 0; */
+    margin: 0;
+    /*background: red;*/
+    padding: 1.5% 0 1% 0;
+  }
+  .navbar-nav li.icon-manual {
+    width: 12%;
+    height: auto;
+    /* padding: 2% 0 2% 0; */
+    margin: 0;
+    /*background: blue;*/
+    padding: 1.5% 0 1% 0;
+  }
+  .navbar-nav li.icon-apps {
+    width: 5%;
+    height: auto;
+    /* padding: 2% 0 2% 0; */
+    margin: 0;
+    /*background: red;*/
+    padding: 1.5% 0 1% 0;
+  }
+  .navbar-nav li.icon-contact {
+    width: 11%;
+    height: auto;
+    /* padding: 2% 0 2% 0; */
+    margin: 0;
+    /*background: red;*/
+    padding: 1.5% 0 1% 0;
+  }
+  /*.navbar {
+    bottom: 0;
+    margin-bottom: 0;
+    border-width: 1px 0 0;
+    border-radius: 0;
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    -webkit-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+  .navbar-brand img {
+    margin-top: 0;
+  }
+  .container-fluid .navbar-collapse {
+    width: 100%;
+    margin-left: 0;
+  }
+  .navbar-collapse ul.navbar-nav {
+    width: 100%;
+    height: auto;
+    margin: 0;
+  }
+  .navbar-collapse ul.navbar-nav {
+    width: 100%;
+    height: auto;
+    margin: 0;
+  }
+  .navbar-collapse ul.navbar-nav li {
+    display: inline-block;
+    width: 14%;
+    height: auto;
+    margin: 0.5% 5.2%;
+    padding: 0;
+    text-align: center;
+    text-transform: capitalize;
+    position: relative;
+  }
+  .navbar-collapse ul.navbar-nav li img {
+    width: 70%;
+  }
+  .navbar-collapse ul.navbar-nav li a {
+    width: 70%;
+    line-height: 130%;
+    font-size: 112%;
+  }
+  .section-body {
+    padding-top: 15px;
+  }*/
+  .municipal-information-cont {
+    margin: 20px 0 0 190px;
+    padding: 0;
+    text-align: center;
+  }
+  .municipal-information-topics {
+    width: 27%;
+    height: auto;
+    padding: 0;
+    margin: 0;
+  }
+  .municipal-information-topics img.images-topics {
+    width: 70%;
+    height: auto;
+    text-align: center;
+  }
+  .municipal-information-topics h3.title-topics {
+    margin: 8px 0 8px 0;
+    font-size: 1.3em;
+    text-align: center;
+    width: 100%;
+  }
+  .municipal-information-topics p.text-topics {
+    line-height: 120%;
+    width: 200px;
+    height: auto;
+  }
+  .seta-topics {
+    width: 6%;
+    text-align: center;
+  }
+  .seta-topics img {
+    width: 400%;
+    text-align: center;
+    margin-left: -10px;
+  }
+  .button-sim#btn-simple {
+    width: 180px;
+    height: 32px;
+    font-size: 1em;
+  }
+  .button-sim#btn-full {
+    width: 180px;
+    height: 32px;
+    font-size: 1em;
+  }
+  .button-algeo {
+    width: 100px;
+    height: 32px;
+    font-size: 1em;
+  }
+  .latest-updates-col h2.title-col a {
+    font-size: 0.9em;
+  }
+  .latest-updates-col h2.title-col a img {
+    width: 40px;
+  }
+  .latest-updates-table tr.line-blue {
+    font-size: 1.1em;
+  }
+  .latest-updates-table tr.line-white {
+    font-size: 1em;
+  }
+  .button-down {
+    width: 110px;
+    height: 32px;
+    font-size: 1em;
+  }
+  .latest-updates-col .cont-col ul li a {
+    font-size: 1.1em;
+  }
+  .latest-updates-col .cont-col ul li.view a {
+    font-size: 1.1em;
+  }
+  .latest-updates-col .cont-col ul li.view a img {
+    width: 17px;
+    height: auto;
+  }
+  .contact .contact-left h2 {
+    font-size: 3.4em;
+  }
+  .contact-seplande {
+    padding-bottom: 0;
+  }
+  .contact .contact-seplande .contact-phone {
+    font-size: 2em;
+  }
+  .contact .contact-seplande .contact-address {
+    font-size: 1.2em;
+    margin: 15px 0 0 0;
+  }
+  .contact-form-text {
+    font-size: 1.2em;
+    margin: 10px 0 0 -30px;
+  }
+  .button-form {
+    width: 115px;
+    height: 33px;
+    font-size: 1em;
+    padding-bottom:10px;
+    margin: 0 0 0 -40px;
+  }
+  .contact .contact-right h2 {
+    font-size: 1.6em;
+  }
+  .contact-links ul {
+    font-size: 0.9em;
+  }
+  .contact-lei a img {
+    width: 70%;
+    height: auto;
+    margin: 20px 0px 0px;
+    padding: 0px;
+  }
+  .contact-brasoes img {
+    width: 90%;
+    height: auto;
+    margin: 10px 0px 0px;
+    padding: 0px;
+  }
+  .contact-license .image-license {
+    width: 23%;
+    padding: 0px;
+  }
+  .contact-links ul {
+    font-size: 0.9em;
+  }
+}
+/* MEDIA QUERIE MIN-WIDTH:1025PX AND MAX-WIDTH:1280PX LANDSCAPE */ /*OK*/ /* #### FALTA CRIAR MEDIA QUERIE #### */
+/* MEDIA QUERIE MIN-WIDTH:801PX */ /*OK*/
+@media only screen and (min-width: 992px) and (orientation: landscape) {
+  .navbar-collapse ul.navbar-nav li.icon-datas {
+    display: none;
+  }
+  .navbar-collapse ul.navbar-nav li.icon-fonts {
+    display: none;
+  }
+  .navbar-collapse ul.navbar-nav li.icon-themes {
+    display: none;
+  }
+  .contact-left {
+    padding-top: 4%;
+  }
+  .contact-right {
+    padding-top: 4%;
+  }
+}
+/* MEDIA QUERIE MIN-WIDTH:1024PX */ /*OK*/
+/*@media only screen and (min-width: 1024px) {
+  .selecttop img.bandeira {
+    width: 11%;
+    height: auto;
+    margin: -8px 2% 0 0;
+  }
+  .section h1.title#title-feature {
+    height: auto;
+    font-size: 4.6em;
+    line-height: 130%;
+    margin-top: 0;
+  }
+  .section h1.title {
+    height: auto;
+    font-size: 3.6em;
+  }
+  .search-input {
+    margin-top: 20px;
+  }
+  .navbar-brand {
+    width: 3%;
+    float: left;
+  }
+  .navbar-brand img {
+    margin-top: 0;
+  }
+  .navbar-collapse {
+    width: 95%;
+    float: left;
+    padding-left: 2%;
+    padding-right: 0;
+  }
+  .navbar-nav {
+    width: 100%;
+  }
+  .navbar-nav li {
+    text-transform: uppercase;
+  }
+  .navbar-nav li a {
+    text-align: center;
+    font-size: 95%;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  .navbar-nav li a img {
+    width: 21px;
+    display: none;
+  }
+  .navbar-nav li.icon-about {
+    width: 7%;
+    height: auto;
+    margin: 0;
+    padding: 1.5% 0 1% 0;
+  }
+  .navbar-nav li.icon-municipal {
+    width: 16%;
+    height: auto;
+    margin: 0;
+    padding: 1.5% 0 1% 0;
+  }
+  .navbar-nav li.icon-algeo {
+    width: 15%;
+    height: auto;
+    margin: 0;
+    padding: 1.5% 0 1% 0;
+  }
+  .navbar-nav li.icon-maps {
+    width: 7%;
+    height: auto;
+    margin: 0;
+    padding: 1.5% 0 1% 0;
+  }
+  .navbar-nav li.icon-publications {
+    width: 10%;
+    height: auto;
+    margin: 0;
+    padding: 1.5% 0 1% 0;
+  }
+  .navbar-nav li.icon-updates {
+    width: 15%;
+    height: auto;
+    margin: 0;
+    padding: 1.5% 0 1% 0;
+  }
+  .navbar-nav li.icon-manual {
+    width: 12%;
+    height: auto;
+    margin: 0;
+    padding: 1.5% 0 1% 0;
+  }
+  .navbar-nav li.icon-apps {
+    width: 6%;
+    height: auto;
+    margin: 0;
+    padding: 1.5% 0 1% 0;
+  }
+  .navbar-nav li.icon-contact {
+    width: 11%;
+    height: auto;
+    margin: 0;
+    padding: 1.5% 0 1% 0;
+  }
+}*/
+/* MEDIA QUERIE MIN-WIDTH: 1023PX MENU MINIMIZADO */ /*OK*/
+@media (max-width: 1023px) { /*@media (max-width: 1118px)*/
+  .navbar-header {
+    float: none;
+  }
+  .navbar-toggle {
+    display: block;
+  }
+  .navbar-collapse {
+    border-top: 1px solid transparent;
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+  }
+  .navbar-collapse.collapse {
+    display: none!important;
+  }
+  .navbar-nav {
+    float: none!important;
+    margin: 7.5px -15px;
+  }
+  .navbar-nav>li {
+    float: none;
+  }
+  .navbar-nav>li>a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+.navbar {
+  min-height: 50px;
+  margin-bottom: 0;
+  border: 0;
+}
