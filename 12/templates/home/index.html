@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Alagoas em Dados e Informações</title>
+  <meta name="keywords" content="dgeo, sinc, seplag, governo">
+  <meta name="author" content="Junior Souza, Bruno Rocha">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  <link rel="stylesheet" href="/home/carlos/www/projetos_seplag/ckanext-adi_theme2/ckanext/adi_theme/public/css/style.css" type="text/css" />
+  <link rel="stylesheet" href="http://www.dados.al.gov.br/css/introjs.css" type="text/css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Raleway:400,300,500,600,700" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Didact+Gothic" rel="stylesheet">
+  
+  <script src="http://www.dados.al.gov.br/js/jquery-2.1.0.min.js"></script>
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-56490249-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+<script>
+  /* When the user clicks on the button, 
+  toggle between hiding and showing the dropdown content */
+  function myFunction() {
+      document.getElementById("myDropdown").classList.toggle("show");
+  }
+
+  // Close the dropdown if the user clicks outside of it
+  window.onclick = function(event) {
+    if (!event.target.matches('.dropbtn')) {
+
+      var dropdowns = document.getElementsByClassName("dropdown-content");
+      var i;
+      for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('show')) {
+          openDropdown.classList.remove('show');
+        }
+      }
+    }
+  }
+</script>
+<script type="text/javascript">
+  /* When the user clicks on the button, 
+  toggle between hiding and showing the dropdown content */
+  function myFunction1() {
+      document.getElementById("myDropdown1").classList.toggle("show");
+  }
+
+  // Close the dropdown if the user clicks outside of it
+  window.onclick = function(event) {
+    if (!event.target.matches('.dropbtn')) {
+
+      var dropdowns = document.getElementsByClassName("dropdown-content");
+      var i;
+      for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('show')) {
+          openDropdown.classList.remove('show');
+        }
+      }
+    }
+  }
+</script>
+</head>
+<body ng-app="App">
+  <div class="section feature" id="feature">
+
+    <div class="row line-top">
+
+      <div class="col-md-2 col-sm-5 col-xs-5 headertop text-left" style="display: none;">
+        <img src="http://www.dados.al.gov.br/images/_icon-alagoas.png" class="bandeira" alt="Bandeira de Alagoas"> ESTADO DE ALAGOAS
+      </div>
+
+      <div class="col-md-8 col-sm-2 col-xs-2 space" style="display: none;"></div>
+
+      <div class="col-md-3 col-md-offset-9 col-sm-8 col-sm-offset-4 col-xs-8 col-xs-offset-4 selecttop text-right">
+        <a href="https://www.facebook.com/portalADI" target="_blank"><img class="bandeira" src="http://www.dados.al.gov.br//images/icon-facebook.png" alt="Curta nossa página no facebook"></a>
+        <!-- <a href=""><img class="bandeira" src="http://www.dados.al.gov.br/images/icon-twitter.png" alt="Siga-nos no twitter"></a> -->
+        <img src="http://www.dados.al.gov.br/images/_icon-alagoas.png" class="bandeira" alt="Bandeira de Alagoas">
+
+        <div class="btn-group text-right cart pull-right">
+
+          <button type="button" class="btn btn-xs btn-primary-top dropdown-toggle" data-toggle="dropdown">
+            GOVERNO EM UM CLIQUE <span class="caret"></span>
+          </button>
+
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="http://www.agenciaalagoas.al.gov.br/" target="_blank">AGÊNCIA ALAGOAS</a></li>
+            <li><a href="http://www.agricultura.al.gov.br/" target="_blank">AGRICULTURA</a></li>
+            <li><a href="http://casal.al.gov.br/" target="_blank">ÁGUA E SANEAMENTO</a></li>
+            <li><a href="http://www.fapeal.br/" target="_blank">AMPARO E PESQUISA</a></li>
+            <li><a href="http://www.assistenciasocial.al.gov.br/" target="_blank">ASSISTÊNCIA SOCIAL</a></li>
+            <li><a href="http://www.expomaceio.com.br/" target="_blank">CENTRO DE CONVENÇÕES</a></li>
+            <li><a href="http://www.cienciaetecnologia.al.gov.br/" target="_blank">CIÊNCIA E TECNOLOGIA</a></li>
+            <li><a href="http://www.compras.al.gov.br/" target="_blank">COMPRAS PÚBLICAS</a></li>
+            <li><a href="http://www.agenciaalagoas.al.gov.br/" target="_blank">COMUNICAÇÃO SOCIAL</a></li>
+            <li><a href="http://www.controladoria.al.gov.br/" target="_blank">CONTROLADORIA</a></li>
+            <li><a href="http://www.cbm.al.gov.br/portal/" target="_blank">CORPO DE BOMBEIROS</a></li>
+            <li><a href="http://www.cultura.al.gov.br/" target="_blank">CULTURA</a></li>
+            <li><a href="http://www.defensoria.al.gov.br/" target="_blank">DEFENSORIA PÚBLICA</a></li>
+            <li><a href="http://www.defesasocial.al.gov.br/" target="_blank">DEFESA SOCIAL</a></li>
+            <li><a href="http://www.defesaagropecuaria.al.gov.br/" target="_blank">DEFESA AGROPECUÁRIA</a></li>
+            <li><a href="http://www.procon.al.gov.br/" target="_blank">DEFESA DO CONSUMIDOR</a></li>
+            <li><a href="http://www.desenvolvimentoeconomico.al.gov.br/" target="_blank">DESENVOLVIMENTO ECONÔMICO</a></li>
+            <li><a href="http://www.ideral.al.gov.br/" target="_blank">DESENVOLVIMENTO RURAL</a></li>
+            <li><a href="http://www.cepal-al.com.br/" target="_blank">DIÁRIO OFICIAL</a></li>
+            <li><a href="http://www.educacao.al.gov.br/" target="_blank">EDUCAÇÃO</a></li>
+            <li><a href="http://www.trabalho.al.gov.br/" target="_blank">EMPREGO E TRABALHO</a></li>
+            <li><a href="http://www.der.al.gov.br/" target="_blank">ESTRADAS E RODAGEM</a></li>
+            <li><a href="http://www.sefaz.al.gov.br/" target="_blank">FAZENDA</a></li>
+            <li><a href="http://www.gabinetecivil.al.gov.br/" target="_blank">GABINETE CIVIL</a></li>
+            <li><a href="http://www.gabinetemilitar.al.gov.br/" target="_blank">GABINETE MILITAR</a></li>
+            <li><a href="http://www.algas.com.br/" target="_blank">GÁS NATURAL</a></li>
+            <li><a href="http://www.gestaopublica.al.gov.br/" target="_blank">GESTÃO PÚBLICA</a></li>
+            <li><a href="http://www.governo.al.gov.br/" target="_blank">GOVERNO</a></li>
+            <li><a href="" target="_blank">HABITAÇÃO</a></li>
+            <li><a href="http://www.ipasealsaude.al.gov.br/" target="_blank">IPASEAL</a></li>
+            <li><a href="http://www.infraestrutura.al.gov.br/" target="_blank">INFRAESTRUTURA</a></li>
+            <li><a href="http://www.juceal.al.gov.br/site/pt-br/" target="_blank">JUNTA COMERCIAL</a></li>
+            <li><a href="http://www.lifal.al.gov.br/" target="_blank">LIFAL</a></li>
+            <li><a href="http://www.ima.al.gov.br/" target="_blank">MEIO AMBIENTE</a></li>
+            <li><a href="http://www.inmqa.al.gov.br/" target="_blank">METROLOGIA E QUALIDADE</a></li>
+            <li><a href="http://www.mulherecidadania.al.gov.br/" target="_blank">MULHER E CIDADANIA</a></li>
+            <li><a href="http://www.ouvidoria.al.gov.br/" target="_blank">OUVIDORIA</a></li>
+            <li><a href="http://www.planejamento.al.gov.br/" target="_blank">PLANEJAMENTO</a></li>
+            <li><a href="http://www.pc.al.gov.br/" target="_blank">POLÍCIA CIVIL</a></li>
+            <li><a href="http://www.pm.al.gov.br/intra/" target="_blank">POLÍCIA MILITAR</a></li>
+            <li><a href="http://www.pge.al.gov.br/" target="_blank">PROCURADORIA</a></li>
+            <li><a href="http://www.izp.al.gov.br/" target="_blank">RÁDIO E TV</a></li>
+            <li><a href="http://www.semarh.al.gov.br/" target="_blank">RECURSOS HÍDRICOS</a></li>
+            <li><a href="http://www.arsal.al.gov.br/" target="_blank">REGULAÇÃO DE SERVIÇOS</a></li>
+            <li><a href="http://www.saude.al.gov.br/" target="_blank">SAÚDE</a></li>
+            <li><a href="http://www.conselhodeseguranca.al.gov.br/" target="_blank">CONSELHO DE SEGURANÇA</a></li>
+            <li><a href="http://www.itec.al.gov.br/" target="_blank">TECNOLOGIA DA INFORMAÇÃO</a></li>
+            <li><a href="http://www.iteral.al.gov.br/" target="_blank">TERRAS E REFORMA AGRÁRIA</a></li>
+            <li><a href="http://www.trabalho.al.gov.br/" target="_blank">TRABALHO</a></li>
+            <li><a href="http://www.detran.al.gov.br/" target="_blank">TRÂNSITO</a></li>
+            <li><a href="http://www.turismo.al.gov.br/" target="_blank">TURISMO</a></li>
+            <li><a href="http://www.uncisal.edu.br/" target="_blank">UNIVERSIDADE DE CIÊNCIAS DA SAÚDE</a></li>
+            <li><a href="http://www.uneal.edu.br/" target="_blank">UNIVERSIDADE ESTADUAL</a></li>
+            <li class="divider"></li>
+            <li class="dropdown-header">OUTROS SITES</li>
+            <li><a href="http://www.delegaciainterativa.al.gov.br/">DELEGACIA INTERATIVA</a></li>
+            <li><a href="http://www.hejc.al.gov.br/">HOSPITAL JOSÉ CARNEIRO</a></li>
+            <li><a href="http://www.hepr.com.br/">HOSPITAL PORTUGAL RAMALHO</a></li>
+            <li><a href="http://www.radiodifusora-al.com.br/">RÁDIO DIFUNSORA AM</a></li>
+            <li><a href="http://www.radioeducativa-al.com.br/">RÁDIO EDUCATIVA FM</a></li>
+            <li><a href="http://www.tveducativa-al.com.br/">TV EDUCATIVA</a></li>
+            <li><a href="http://www.teatrodeodoro.al.gov.br/">TEATRO DEODORO</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="container section-body " style="padding-bottom: 0; padding-top: 0; ">
+
+    <div class="col-md-5 col-sm-12 col-xs-12 text-center" style="width: 100.666667%;padding-right: 0px;padding-left: 0px;">
+      <a href="#feature" class="scrolling">
+        <img src="/home/carlos/www/projetos_seplag/ckanext-adi_theme2/ckanext/adi_theme/public/images/__img-logo.png" class="logo-portal" alt="Logomarca do Portal Alagoas em Dados e Informações">
+      </a>
+    </div>
+      <div class="row">
+        <div class="col-md-7 hidden-sm hidden-xs menu-top" style="float: right;width: 68.333333%;padding-top: 0px;padding-right: 0px;padding-left: 0px;">
+          <ul>
+            <li> <a href="#" onclick="myFunction()" class="dropbtn">SOBRE
+              <span class="caret"></span>
+              </a>
+              <div id="myDropdown" class="dropdown-content">
+                <a href="http://dados.al.gov.br/pages/quem-somos">QUEM SOMOS</a>
+                <a href="http://dados.al.gov.br/pages/expediente">EXPEDIENTE</a>
+              </div>
+            </li>
+            <li><a href="http://dados.al.gov.br/dataset">DADOS</a></li>
+            <li><a href="http://dados.al.gov.br/organization">FONTES</a></li>
+            <div class="dropdown">
+            <li> <a href="#" onclick="myFunction1()" class="dropbtn">SERVIÇOS
+              <span class="caret"></span>
+              </a>
+              <div id="myDropdown1" class="dropdown-content">
+                <a href="http://dados.al.gov.br/developing.html">SOLICITAÇÃO DE INFORMAÇÃO</a>
+                <a href="http://dados.al.gov.br/glossario/#/">GLOSÁRIO</a>
+                <a href="http://dados.al.gov.br/glossario/#/">INFORMAÇÕES MUNICIPAIS</a>
+                <a href="http://dados.al.gov.br/glossario/#/">ALAGOAS GEOGRÁFICO</a>
+                <a href="http://dados.al.gov.br/glossario/#/">MAPAS</a>
+                <a href="http://dados.al.gov.br/glossario/#/">PUBLICAÇÕES</a>
+                <a href="http://dados.al.gov.br/glossario/#/">GUIA DO DESENVOLVEDOR</a>
+                <a href="http://dados.al.gov.br/glossario/#/">SOLICITAÇÃO DE INFORMAÇÃO</a>
+              </div>
+            </li>
+            </div>
+              <ul class="dropdown-menu tematicas" ng-controller="GroupsController">
+                <li ng-repeat="group in groups">
+                  <a href="http://dados.al.gov.br/group/{[ group.id ]}">
+                    <img ng-src="{[ group.image_display_url ]}" alt="" width="140">
+                    <div class="clearfix"></div>
+                    <p>{[ group.title | limitTo:15 ]}</p>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            
+          </ul>
+        </div>
+        <a href="javascript:void();" onclick="startIntro();" title="Tour pelo site"><img src="http://www.dados.al.gov.br/images/_icon-help.png" class="help hidden-sm hidden-xs" alt="Navegue pelo site"></a>
+      </div>
+      <div class="row search-title">
+        <div class="col-md-12 text-center">
+          <h1 class="title" id="title-feature" style="font-family: 'Didact Gothic', sans-serif;">O que você precisa <br> saber sobre Alagoas?</h1>
+        </div>
+      </div>
+      <div class="row search-input">
+        <div class="col-md-8 col-md-offset-2 col-xs-10 col-xs-offset-1">
+          <form action="http://dados.al.gov.br/dataset" class="input-group-lg">
+            <div class="input-group">
+              <input type="search" class="form-control" name="q" placeholder="Pesquisar">
+              <span class="input-group-btn btn-group-lg">
+                <button type="submit" class="btn btn-default btn-lg" style="padding-top: 24%; padding-bottom: 25%;">
+                  <icon class="fa fa-search"></icon>
+                </button>
+              </span>
+            </div>
+          </form>
+        </div>
+      </div>
+      <!-- <div class="col-md-12 hidden-sm hidden-xs menu-scroll">
+        <ul>
+          <li>
+            <a href="#about" class="scrolling">
+              <img src="http://www.dados.al.gov.br/images/icon-sobre.png" alt="Conheça Sobre o Portal">
+              <p class="text-vertical">SOBRE</p>
+            </a>
+          </li>
+          <li>
+            <a href="#municipal-information" class="scrolling">
+              <img src="http://www.dados.al.gov.br/images/icon-infomunicipal.png" alt="Acesse o Sistema de Informações Municipais">
+              <p class="text-horizontal">INFORMAÇÕES MUNICIPAIS</p>
+            </a>
+          </li>
+          <li>
+            <a href="#alagoas-geographic" class="scrolling">
+              <img src="http://www.dados.al.gov.br/images/icon-algeo.png" alt="Acesse o Alagoas Geográfico">
+              <p class="text-horizontal">ALAGOAS GEOGRÁFICO</p>
+            </a>
+          </li>
+          <li>
+            <a href="http://dados.al.gov.br/dataset?tags=Mapa" target="_blank">
+              <img src="http://www.dados.al.gov.br/images/icon-mapas.png" alt="Acesse o acervo de Mapas">
+              <p class="text-vertical">MAPAS</p>
+            </a>
+          </li>
+          <li>
+            <a href="http://dados.al.gov.br/dataset?tags=Publica%C3%A7%C3%A3o" target="_blank">
+              <img src="http://www.dados.al.gov.br/images/icon-publicacoes.png" alt="Acesse as Publicações">
+              <p class="text-vertical">PUBLICAÇÕES</p>
+            </a>
+          </li>
+          <li>
+            <a href="#latest-updates" class="scrolling">
+              <img src="http://www.dados.al.gov.br/images/icon-atualizacoes.png" alt="Ultimas Informações">
+              <p class="text-horizontal">ULTIMAS ATUALIZAÇOES</p>
+            </a>
+          </li>
+          <li>
+            <a href="/desenvolvedor.html" target="_blank">
+              <img src="http://www.dados.al.gov.br/images/icon-develop.png" alt="Acesse o Manual do Desenvolvedor">
+              <p class="text-vertical">DESENVOLVEDOR</p>
+            </a>
+          </li>
+          <li>
+            <a href="/developing.html" target="_blank">
+              <img src="http://www.dados.al.gov.br/images/icon-apps.png" alt="Conheça os Aplicativos">
+              <p class="text-vertical">APLICATIVOS</p>
+            </a>
+          </li>
+          <li>
+            <a href="#contact" class="scrolling">
+              <img src="http://www.dados.al.gov.br/images/icon-faleconosco.png" alt="Fale Conosco">
+              <p class="text-vertical">FALE CONOSCO</p>
+            </a>
+          </li>
+        </ul>
+       --></div>
+    </div><!-- end container section-body -->
+  </div><!-- end section-feature -->
+
+  <!-- <nav class="navbar navbar-default" role="navigation">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand scrolling" href="#feature">
+          <img src="/images/_icon-portal2.png" style="height: 30px; top: -6px; position: relative;">
+        </a>
+      </div>
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li class="icon-datas"><a href="http://dados.al.gov.br/dataset" class="scrolling"><img src="/images/__icon-data2.png"> Dados</a></li>
+          <li class="icon-fonts"><a href="http://dados.al.gov.br/organization" class="scrolling"><img src="/images/__icon-fonts2.png"> Fontes</a></li>
+          <li class="icon-themes"><a href="http://dados.al.gov.br/group" class="scrolling"><img src="/images/__icon-themes2.png"> Temáticas</a></li>
+          <li class="icon-about"><a href="#about" class="scrolling"><img src="/images/__icon-sobre.png"> Sobre</a></li>
+          <li class="icon-municipal"><a href="#municipal-information" class="scrolling"><img src="/images/__icon-informunicipal.png"> Informações Municipais</a></li>
+          <li class="icon-algeo"><a href="#alagoas-geographic" class="scrolling"><img src="/images/__icon-algeo.png"> Alagoas Geográfico</a></li>
+          <li class="icon-maps"><a href="http://dados.al.gov.br/dataset?tags=Mapa" target="_blank"><img src="/images/__icon-mapas.png"> Mapas</a></li>
+          <li class="icon-publications"><a href="http://dados.al.gov.br/dataset?tags=Publica%C3%A7%C3%A3o" target="_blank"><img src="/images/__icon-publicacoes.png"> Publicações</a></li>
+          <li class="icon-updates"><a href="#latest-updates" class="scrolling"><img src="/images/__icon-atualizacoes.png"> Últimas Atualizações</a></li>
+          <li class="icon-manual"><a href="/desenvolvedor.html" target="_blank"><img src="/images/__icon-develop.png"> Desenvolvedor</a></li>
+          <li class="icon-apps"><a href="/developing.html"><img src="/images/__icon-apps.png"> Apps</a></li>
+          <li class="icon-contact"><a href="#contact" class="scrolling"><img src="/images/__icon-faleconosco.png"> Fale Conosco</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav> -->
+
+  <!-- ABOUT -->
+  <div class="section about" id="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-10 col-sm-10 col-lg-10 col-xs-10 col-md-offset-1 section-body text-center">
+          <div class="col-md-12">
+          <div class="col-md-3">
+            <a href="#"><img style="padding-bottom: 0.5%;" width="200" src="/home/carlos/Área de Trabalho/layout ADI/trator.png"><a class="legenda">Agropecuária p</a></a>
+          </div>  
+          <div class="col-md-3">
+            <a href="#"><img style="padding-bottom: 0.5%;" width="200" src="/home/carlos/Área de Trabalho/layout ADI/caracterizacao.png"><a class="legenda">Caracterização</a></a>
+          </div>
+          <div class="col-md-3">  
+            <a href="#"><img style="padding-bottom: 0.5%;" width="200" src="/home/carlos/Área de Trabalho/layout ADI/quimica.png"><a class="legenda">Ciência e Tecnologia</a></a>
+          </div>
+          <div class="col-md-3">
+            <a href="#"><img style="padding-bottom: 0.5%;" width="200" src="/home/carlos/Área de Trabalho/layout ADI/culturaes.png"><a class="legenda">Cultura e Esportes</a></a>
+          </div>
+          <div class="col-md-3">
+            <a href="#"><img style="padding-bottom: 0.5%;" width="200" src="/home/carlos/Área de Trabalho/layout ADI/povo.png"><a class="legenda">Demografia</a></a>
+          </div>
+          <div class="col-md-3">
+            <a href="#"><img style="padding-bottom: 0.5%;" width="200" src="/home/carlos/Área de Trabalho/layout ADI/eleva.png"><a class="legenda">Desenvolvimento</a></a>
+          </div>
+          <div class="col-md-3">
+            <a href="#"><img style="padding-bottom: 0.5%;" width="200" src="/home/carlos/Área de Trabalho/layout ADI/grafico.png"><a class="legenda">Economia</a></a>
+          </div>
+          <div class="col-md-3">
+            <a href="#"><img style="padding-bottom: 0.5%;" width="200" src="/home/carlos/Área de Trabalho/layout ADI/livro.png"><a class="legenda">Educação</a></a>
+          </div>
+          <div class="col-md-3">
+            <a href="#"><img style="padding-bottom: 0.5%;" width="200" src="/home/carlos/Área de Trabalho/layout ADI/financa.png"><a class="legenda">Finanças</a></a>
+          </div>
+          <div class="col-md-3">
+            <a href="#"><img style="padding-bottom: 0.5%;" width="200" src="/home/carlos/Área de Trabalho/layout ADI/amizade.png"><a class="legenda">Gestão Pública</a></a>
+          </div>
+          <div class="col-md-3">
+            <a href="#"><img style="padding-bottom: 0.5%;" width="200" src="/home/carlos/Área de Trabalho/layout ADI/industria.png"><a class="legenda">Infraestutura</a></a>
+          </div>
+          <div class="col-md-3">
+            <a href="#"><img style="padding-bottom: 0.5%;" width="200" src="/home/carlos/Área de Trabalho/layout ADI/planta.png"><a class="legenda">Meio Ambiente</a></a>
+          </div>
+          <div class="col-md-3">
+            <a href="#"><img style="padding-bottom: 0.5%;" width="200" src="/home/carlos/Área de Trabalho/layout ADI/doc.png"><a class="legenda">Publicações</a></a>
+          </div>
+          <div class="col-md-3">
+            <a href="#"><img style="padding-bottom: 0.5%;" width="200" src="/home/carlos/Área de Trabalho/layout ADI/traba.png"><a class="legenda">trabalho</a></a>
+          </div>
+          <div class="col-md-3">
+            <a href="#"><img style="padding-bottom: 0.5%;" width="200" src="/home/carlos/Área de Trabalho/layout ADI/seguranca.png"><a class="legenda">Segurança Pública</a></a>
+          </div>
+          <div class="col-md-3">
+            <a href="#"><img style="padding-bottom: 0.5%;" width="200" src="/home/carlos/Área de Trabalho/layout ADI/viagem.png"><a class="legenda">Turismo</a></a>
+          </div>
+            
+          </div>  
+        </div>
+      </div>
+    </div>
+  </div><!-- END ABOUT -->
+
+  <!-- MUNICIPAL INFORMATION -->
+  <div class="section about" id="about" style="background-color: #E6E6E6;">
+    <div class="container">
+      <div class="row section-body">
+        <div class="col-md-12 text-center" id="about">
+          <h1 class="title">Sistema de Informações Municipais</h1>
+        </div>
+        <div class="col-md-12 text-center" id="about">
+          <p class="context">
+            O SIM é um sistema web que disponibiliza um conjunto de informações estatísticas sobre o Estado de
+            Alagoas, tais como: agropecuária, educação, saúde, infraestrutura, economia dentre outras informações.
+            O SIM possui duas formas de acesso: <b>ACESSO SIMPLIFICADO</b>, uma maneira prática de ter acesso a informações
+            básicas sobre os 102 municípios alagoanos. O <b>ACESSO COMPLETO</b> apresenta um conjunto ampliado de informações
+            municipais, permitindo consultas personalizadas sobre várias áreas do conhecimento.
+          </p>
+        </div>
+        <div class="col-md-8 municipal-information-cont col-md-offset-2">
+          <div class="col-md-2 municipal-information-topics text-center">
+            <img src="/home/carlos/www/projetos_seplag/ckanext-adi_theme2/ckanext/adi_theme/public/images/_img-globo1.png" class="images-topics" alt="Localidades">
+            <h3 class="title-topics">Localidades</h3>
+            <p class="text-topics">
+              Primeiro, indique a localidade e regiões das quais deseja obter informações.
+            </p>
+          </div>
+          <div class="col-md-1 seta-topics">
+            <img src="http://www.dados.al.gov.br/images/_img-seta.png" class="setas">
+          </div>
+          <div class="col-md-2 municipal-information-topics text-center">
+            <img src="/home/carlos/www/projetos_seplag/ckanext-adi_theme2/ckanext/adi_theme/public/images/_img-infor1.png" class="images-topics" alt="Informações">
+            <h3 class="title-topics">Informações</h3>
+            <p class="text-topics">
+              Depois, determine quais as informações deseja exibir no sistema.
+            </p>
+          </div>
+          <div class="col-md-1 seta-topics">
+            <img src="http://www.dados.al.gov.br/images/_img-seta.png" class="setas">
+          </div>
+          <div class="col-md-2 municipal-information-topics text-center">
+            <img src="/home/carlos/www/projetos_seplag/ckanext-adi_theme2/ckanext/adi_theme/public/images/_img-result1.png" class="images-topics" alt="Resultados">
+            <h3 class="title-topics">Resultados</h3>
+            <p class="text-topics">
+              A partir disto serão geradas tabelas e mapas de acordo com suas escolhas feitas.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-12 municipal-information-buttons text-center">
+          <a href="http://geo.seplande.al.gov.br/simfacil/web/index.php" target="_blank">
+            <button class="btn button-sim" id="btn-simple">VERSÃO SIMPLIFICADA</button>
+          </a>
+          <a href="http://geo.seplande.al.gov.br/geoweb/wizard/php/frmNivelAgrupamento.php" target="_blank">
+            <button class="btn button-sim" id="btn-full">VERSÃO COMPLETA</button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div><!-- END MUNICIPAL INFORMATION -->
+
+  <!-- ALAGOAS GEOGRAPHIC -->
+  <div class="section about" id="alagoas-geographic">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-10 col-md-offset-1 section-body text-center">
+          <img class="algeo" src="/home/carlos/www/projetos_seplag/ckanext-adi_theme2/ckanext/adi_theme/public/images/_img-algeo1.png" alt="Ícone do Alagoas Geográfico">
+          <h1 class="title">Alagoas Geográfico</h1>
+          <p class="context">
+            O <b>Alagoas Geográfico</b> é um Sistema de Informações Geográficas na qual é possível ter acesso
+            a informações geoespaciais sobre Alagoas como: imagens de satélites de alta resolução, mapas temáticos,
+            dados de relevos, informações sociais e econômicas entre outras. Por meio do Alagoas Geográfico podem-se
+            consultar dados, integrar informações, gerar imagens, através de acesso livre.
+          </p>
+          <div class="clearfix"></div>
+          <a href="http://geo.seplande.al.gov.br/geoweb/src/php/app.php" target="_blank">
+            <button class="btn button-algeo">ACESSAR</button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div><!-- END ALAGOAS GEOGRAPHIC -->
+
+  <!-- LASTEST UPDATES -->
+  <div class="section about" id="about" style="background-color: #B8B8BA;">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 section-body text-center">
+          <h1 class="title">Últimas Atualizações</h1>
+          <div class="col-md-6 latest-updates-col">
+            <h2 class="title-col">
+              <a href="http://dados.al.gov.br/dataset/ultimos-numeros">
+                <img src="/home/carlos/www/projetos_seplag/ckanext-adi_theme2/ckanext/adi_theme/public/images/_icon-estatistic1.png" alt="Ícone de Estatísticas Recentes">Estatísticas Recentes
+              </a>
+            </h2>
+            <div class="table-statistic" ng-controller="RecentStatisticsController" ng-init="fetchData()">
+              <table class="latest-updates-table text-left">
+                <tbody ng-repeat="recent_statistic in recent_statistics">
+                  <tr class="line-blue">
+                    <td class="td-left">{[ recent_statistic.title ]}</td>
+                    <td class="td-right">{[ recent_statistic.value ]}</td>
+                  </tr>
+                  <tr class="line-white">
+                    <td class="td-left">{[ recent_statistic.description ]}</td>
+                    <td class="td-right">{[ recent_statistic.period ]}</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="col-md-12 col-sm-12 col-xs-12">
+              <a class="recent-statistics-download" href="http://dados.al.gov.br/dataset/a408398b-6c2d-4c84-a31f-889d92d7b28e/resource/16182a42-53ea-45f5-b8d4-0cf987fc5dc5/download/ultimosnumeroscorrigidosdatadeatualizacao211114.xlsx" target="_blank">
+                <button class="btn button-down">DOWNLOAD</button>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-6 latest-updates-col">
+            <div class="row text-left">
+              <div class="col-md-12 cont-col">
+                <h2 class="title-col">
+                  <a href="http://dados.al.gov.br/dataset?tags=Mapa">
+                    <img src="/home/carlos/www/projetos_seplag/ckanext-adi_theme2/ckanext/adi_theme/public/images/_icon-map1.png" alt="Ícone de Mapas">Mapas
+                  </a>
+                </h2>
+                <ul class="load-maps">
+                  <li class="view text-right">
+                    <a href="http://dados.al.gov.br/dataset?tags=Mapa" target="_blank">
+                      Ver mais <img src="http://www.dados.al.gov.br/images/_icon-view-more.png" alt="">
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-12 cont-col">
+                <h2 class="title-col">
+                  <a href="http://dados.al.gov.br/dataset?tags=Nota">
+                    <img src="/home/carlos/www/projetos_seplag/ckanext-adi_theme2/ckanext/adi_theme/public/images/_icon-notes1.png" alt="">Notas Técnicas
+                  </a>
+                </h2>
+                <p>
+                <ul class="load-articles">
+                  <li class="view text-right">
+                    <a href="http://dados.al.gov.br/dataset?tags=Nota" target="_blank">
+                      Ver mais <img src="http://www.dados.al.gov.br/images/_icon-view-more.png" alt="">
+                    </a>
+                  </li>
+                </ul>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div><!-- END LATEST UPDATES -->
+
+  <script type="text/javascript">
+    $(function(){
+      $.get('http://dados.al.gov.br/api/3/action/resource_show?id=16182a42-53ea-45f5-b8d4-0cf987fc5dc5', function(data) {
+        if (data.success == true) {
+          $('.recent-statistics-download').attr('href', data.result.url);
+        }
+      });
+      $.get('http://dados.al.gov.br/api/3/action/resource_search?query=description:[MAPA]&limit=2', function(data) {
+        if (data.success == true) {
+          data.result.results.forEach(function(item) {
+            $('ul.load-maps').prepend('<li><a href="' + item.url + '" target="_blank"><img src="http://www.dados.al.gov.br/images/_icon-list.png" alt=""> ' + item.name + '</a></li>');
+          });
+        }
+      });
+      $.get('http://dados.al.gov.br/api/3/action/resource_search?query=description:[NOTA]&limit=2', function(data) {
+        if (data.success == true) {
+          data.result.results.forEach(function(item) {
+            $('ul.load-articles').prepend('<li><a href="' + item.url + '" target="_blank"><img src="http://www.dados.al.gov.br/images/_icon-list.png" alt=""> ' + item.name + '</a></li>');
+          });
+        }
+      });
+    });
+  </script>
+
+  <!-- MORE INFORMATION -->
+  <div class="section more-information" style="display: none;">
+    <div class="container">
+      <div class="row section-body">
+        <div class="col-md-12 text-center">
+          <h1 class="title">Mais Informações</h1>
+        </div>
+        <div class="col-md-8 municipal-information-cont col-md-offset-2 text-center">
+          <div class="col-md-2 municipal-information-topics text-center">
+            <a href="">
+              <img src="http://www.dados.al.gov.br/images/_img-number.png" class="images-topics" alt="Localidades">
+              <h3 class="title-topics">Estatísticas Recentes</h3>
+            </a>
+            <p class="text-topics">
+              Primeiro, indique a localidade e regiões das quais deseja obter informações.
+            </p>
+          </div>
+          <div class="col-md-1 seta-topics">
+          </div>
+          <div class="col-md-2 municipal-information-topics text-center">
+            <a href="">
+              <img src="http://www.dados.al.gov.br/images/_img-manual.png" class="images-topics" alt="Informações">
+              <h3 class="title-topics">Manual do Desenvolvedor</h3>
+            </a>
+            <p class="text-topics">
+              Depois, determine quais as informações deseja exibir no sistema.
+            </p>
+          </div>
+          <div class="col-md-1 seta-topics">
+          </div>
+          <div class="col-md-2 municipal-information-topics text-center">
+            <a href="">
+              <img src="http://www.dados.al.gov.br/images/_img-infor.png" class="images-topics" alt="Resultados">
+              <h3 class="title-topics">Notas Técnicas</h3>
+            </a>
+            <p class="text-topics">
+              A partir disto serão geradas tabelas e mapas de acordo com suas escolhas feitas.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div><!-- END MORE INFORMATION -->
+
+  <!-- CONTACT -->
+  <div class="section about" id="about" ng-controller="ContactController" id="about" style="background-color: #B8B8BA;">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 section-body text-center">
+          <div class="col-md-6 contact-left text-left">
+            <h2 class="title-contact">
+              Fale Conosco
+            </h2>
+
+            <div class="alert alert-success" role="alert" ng-show="sent">
+              <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              Contato enviado com sucesso!
+            </div>
+
+            <div class="alert alert-danger" role="alert" ng-show="error">
+              <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              Houve um erro ao enviar o contato. Verifique se todos os campos estão preenchidos.
+            </div>
+
+            <form class="contact-form" name="contactForm" ng-submit="sendContact(contact)" novalidate>
+              <div class="input-group">
+                <span class="input-group-addon input-lg">Nome</span>
+                <input type="text" id="name" class="form-control input-lg" placeholder="Digite seu nome" ng-model="contact.namee" required>
+              </div>
+              <br>
+              <div class="input-group">
+                <span class="input-group-addon input-lg">E-mail</span>
+                <input type="text" id="email" class="form-control input-lg" placeholder="Digite seu e-mail" ng-model="contact.email" required>
+              </div>
+              <br>
+              <div class="style-select">
+                <select id="subject" class="form-control input-lg" ng-model="contact.subject" required>
+                  <option value="" disabled selected>Selecione o assunto</option>
+                  <option value="Críticas">Críticas</option>
+                  <option value="Elogios">Elogios</option>
+                  <option value="Sugestões">Sugestões</option>
+                </select>
+              </div>
+              <br>
+              <textarea class="text-input input-lg" placeholder="Escreva aqui sua mensagem" rows="3" ng-model="contact.message" required></textarea>
+              <br>
+              <br>
+              <div class="col-md-12 contact-btn text-center">
+                <input class="input-lg submit-contact-form" id="enviar" type="submit" value="ENVIAR >" ng-disabled="buttonDisabled" />
+              </div>
+            </form>
+            <br>
+            <br>
+            <br>
+            <div class="col-md-9 col-sm-12 col-xs-12 contact-form text-center">
+              <h3 class="contact-form-text">
+                Gostaria de solicitar uma informação?
+              </h3>
+            </div>
+            <div class="col-md-3 col-sm-12 col-xs-12 contact-btn-form text-center">
+              <a href="http://www.dados.al.gov.br//solicitar-informacao.html" target="_blank">
+                <button class="btn button-form">Clique Aqui</button>
+              </a>
+            </div>
+            <br>
+            <div class="col-md-12 checks text-left" style="display: none;">
+              <input type="checkbox"> Avise-me sobre novas publicações por e-mail
+            </div>
+            <br>
+            <br>
+
+            <hr>
+
+            <h2 class="title-contact">
+              Newsletter
+            </h2>
+
+            <div ng-controller="NewsletterController">
+              <form name="newsletter" novalidate>
+                <div class="form-group">
+                  <input type="email" class="form-control input-lg" placeholder="Digite seu e-mail" ng-model="model.newsletter.email" required>
+                </div>
+                <div class="form-actions">
+                  <button class="btn button-form" ng-click="saveNewsletter()">Cadastrar</button>
+                </div>
+              </form>
+            </div>
+
+            <br>
+            <br>
+            <div class="contact-seplande text-left">
+              <h3 class="contact-phone">
+                (82) 3315.1525
+              </h3>
+              <h3 class="contact-address">
+                Rua Cincinato Pinto, 503<br>
+                Centro - Maceió - Alagoas
+              </h3>
+            </div>
+          </div>
+          <div class="col-md-6 contact-right text-center">
+            <img src="http://www.dados.al.gov.br/images/_img-location.png" alt="Ícone de Localização">
+            <h2 class="title-contact">
+              Encontre a Seplag
+            </h2>
+            <div class="geolocation">
+              <iframe src="https://google.com/maps/embed?pb=!1m18!1m12!1m3!1d3933.2450908214105!2d-35.74083960000004!3d-9.660087599999985!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7014f8000e0643f%3A0x76822678c9c0d97e!2sR.+Cincinato+Pinto%2C+503+-+Centro%2C+Macei%C3%B3+-+AL!5e0!3m2!1spt-BR!2sbr!4v1412341953541" width="100%" height="100%" frameborder="0" style="border:0"></iframe>
+            </div>
+            <div class="row">
+              <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="col-md-6 col-sm-6 col-xs-6 contact-links text-left">
+                  <ul>O Portal
+                    <li>
+                      <a href="http://dados.al.gov.br/pages/quem-somos">Quem Somos</a>
+                    </li>
+                    <li>
+                      <a href="http://dados.al.gov.br/pages/expediente">Expediente</a>
+                    </li>
+                    <li>
+                      <a href="http://dados.al.gov.br/dataset?tags=Instru%C3%A7%C3%A3o+normativa">Instrução Normativa</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-md-6 col-sm-6 col-xs-6 contact-links text-left">
+                  <ul>Serviços
+                    <li>
+                      <a href="/developing.html">Solicitação de informação</a>
+                    </li>
+                    <li>
+                      <a href="/developing.html">Glossário</a>
+                    </li>
+                    <li>
+                      <a href="/developing.html">Biblioteca</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <div class="col-md-4 col-sm-4 col-xs-4 contact-lei text-left">
+                  <a href="http://acessoainformacao.gov.br/" target="_blank">
+                    <img src="http://www.dados.al.gov.br/images/icon-lei.png" alt="Lei de Acesso à Informação"/>
+                  </a>
+                </div>
+                <div class="col-md-8 col-sm-8 col-xs-8 contact-brasoes text-right">
+                  <img src="http://www.dados.al.gov.brimages/_img-brasao-al.png" alt="Secretaria de Estado do Planejamento e do Desenvolvimento Econômico">
+                </div>
+              </div>
+              <br>
+              <div class="col-md-12 col-sm-12 col-xs-12 text-left contact-license">
+                <div class="col-md-2 col-sm-12 col-xs-12 image-license">
+                  <a href="http://opendefinition.org/licenses/cc-by-sa/" target="_blank">
+                    <img src="http://i.creativecommons.org/l/by-sa/3.0/80x15.png" alt="Licença Creative Commmons"/>
+                  </a>
+                </div>
+                <div class="col-md-10 col-sm-12 col-xs-12 text-license">
+                  <a href="http://opendefinition.org/licenses/cc-by-sa/" target="_blank">
+                    Todo conteúdo licenciado sob uma Licença Creative Commons Attribution-ShareAlike (cc-by-sa).
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div><!-- END CONTACT -->
+
+  <script src="http://www.dados.al.gov.br/js/bootstrap.min.js"></script>
+  <script src="http://www.dados.al.gov.br/js/jquery.scrollTo.js"></script>
+  <script src="http://www.dados.al.gov.br/js/intro.js"></script>
+  <script src="http://www.dados.al.gov.br/js/scripts.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.13/angular.min.js"></script>
+  <script src="http://www.dados.al.gov.br/js/angular/app.js"></script>
+  <script src="http://www.dados.al.gov.br/js/angular/contact_controller.js"></script>
+  <script src="http://www.dados.al.gov.br/js/angular/recent_statistics_controller.js"></script>
+  <script src="http://www.dados.al.gov.br/js/angular/newsletter_controller.js"></script>
+  <script src="http://www.dados.al.gov.br/js/angular/masks.min.js"></script>
+
+  <script type="text/javascript">
+    var _hta = {'_setToken': '53b4abccae352cb4a7d769695e13e9fc21bad1bd','_htException': 'HandTalk_EXCECAO'};
+    (function() {
+      var ht = document.createElement('script'); ht.type = 'text/javascript'; ht.async = true;
+      ht.src = 'http://api.handtalk.me/handtalk_init.js';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.appendChild(ht);
+    })();
+    //  HandTalk_EXCECAO -> ID ou CLASSE do elemento que desejar exceção, separados por virgula
+    //  Exemplo:  '#menu,.listas,.formulario,#carrousel'
+  </script>
+</body>
+</html>
