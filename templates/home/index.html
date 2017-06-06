@@ -8,12 +8,12 @@
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-  <link rel="stylesheet" href="/home/carlos/www/projetos_seplag/ckanext-adi_theme2/ckanext/adi_theme/public/css/style.css" type="text/css" />
+  <link rel="stylesheet" href="/12/public/css/style.css" type="text/css" />
   <link rel="stylesheet" href="http://www.dados.al.gov.br/css/introjs.css" type="text/css" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Raleway:400,300,500,600,700" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Didact+Gothic" rel="stylesheet">
-  
+
   <script src="http://www.dados.al.gov.br/js/jquery-2.1.0.min.js"></script>
   <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -26,7 +26,7 @@
   </script>
 
 <script>
-  /* When the user clicks on the button, 
+  /* When the user clicks on the button,
   toggle between hiding and showing the dropdown content */
   function myFunction() {
       document.getElementById("myDropdown").classList.toggle("show");
@@ -48,7 +48,7 @@
   }
 </script>
 <script type="text/javascript">
-  /* When the user clicks on the button, 
+  /* When the user clicks on the button,
   toggle between hiding and showing the dropdown content */
   function myFunction1() {
       document.getElementById("myDropdown1").classList.toggle("show");
@@ -70,7 +70,7 @@
   }
 </script>
 </head>
-<body ng-app="App">
+<body bacground="/12/images/imagem_fundo.png">
   <div class="section feature" id="feature">
 
     <div class="row line-top">
@@ -163,18 +163,20 @@
 
     <div class="col-md-5 col-sm-12 col-xs-12 text-center" style="width: 100.666667%;padding-right: 0px;padding-left: 0px;">
       <a href="#feature" class="scrolling">
-        <img src="/home/carlos/www/projetos_seplag/ckanext-adi_theme2/ckanext/adi_theme/public/images/__img-logo.png" class="logo-portal" alt="Logomarca do Portal Alagoas em Dados e Informações">
+        <img src="/12/public/images/__img-logo.png" class="logo-portal" alt="Logomarca do Portal Alagoas em Dados e Informações">
       </a>
     </div>
       <div class="row">
-        <div class="col-md-7 hidden-sm hidden-xs menu-top" style="float: right;width: 68.333333%;padding-top: 0px;padding-right: 0px;padding-left: 0px;">
+        <div class="col-md-7 hidden-sm hidden-xs menu-top" style="float: right;width: 75.333333%;padding-top: 0px;padding-right: 0px;padding-left: 0px;">
           <ul>
-            <li> <a href="#" onclick="myFunction()" class="dropbtn">SOBRE
+            <li> <a href="#" onclick="myFunction()" class="dropbtn">INSTITUCIONAL
               <span class="caret"></span>
               </a>
               <div id="myDropdown" class="dropdown-content">
                 <a href="http://dados.al.gov.br/pages/quem-somos">QUEM SOMOS</a>
                 <a href="http://dados.al.gov.br/pages/expediente">EXPEDIENTE</a>
+                <a href="http://dados.al.gov.br/glossario/#/">GLOSSÁRIO</a>
+                <a href="http://dados.al.gov.br/desenvolvedor.html">GUIA DO DESENVOLVEDOR</a>
               </div>
             </li>
             <li><a href="http://dados.al.gov.br/dataset">DADOS</a></li>
@@ -185,13 +187,12 @@
               </a>
               <div id="myDropdown1" class="dropdown-content">
                 <a href="http://dados.al.gov.br/developing.html">SOLICITAÇÃO DE INFORMAÇÃO</a>
-                <a href="http://dados.al.gov.br/glossario/#/">GLOSÁRIO</a>
-                <a href="http://dados.al.gov.br/glossario/#/">INFORMAÇÕES MUNICIPAIS</a>
-                <a href="http://dados.al.gov.br/glossario/#/">ALAGOAS GEOGRÁFICO</a>
-                <a href="http://dados.al.gov.br/glossario/#/">MAPAS</a>
-                <a href="http://dados.al.gov.br/glossario/#/">PUBLICAÇÕES</a>
-                <a href="http://dados.al.gov.br/glossario/#/">GUIA DO DESENVOLVEDOR</a>
-                <a href="http://dados.al.gov.br/glossario/#/">SOLICITAÇÃO DE INFORMAÇÃO</a>
+
+                <a href="#municipal-information">INFORMAÇÕES MUNICIPAIS</a>
+                <a href="#alagoas-geographic">ALAGOAS GEOGRÁFICO</a>
+                <a href="http://dados.al.gov.br/dataset?tags=Mapa">MAPAS</a>
+                <a href="http://dados.al.gov.br/dataset?tags=Publica%C3%A7%C3%A3o">PUBLICAÇÕES</a>
+
               </div>
             </li>
             </div>
@@ -205,7 +206,7 @@
                 </li>
               </ul>
             </li>
-            
+
           </ul>
         </div>
         <a href="javascript:void();" onclick="startIntro();" title="Tour pelo site"><img src="http://www.dados.al.gov.br/images/_icon-help.png" class="help hidden-sm hidden-xs" alt="Navegue pelo site"></a>
@@ -329,55 +330,54 @@
         <div class="col-md-10 col-sm-10 col-lg-10 col-xs-10 col-md-offset-1 section-body text-center">
           <div class="col-md-12">
           <div class="col-md-3">
-            <a href="#"><img style="padding-bottom: 0.5%;" width="200" src="/home/carlos/Área de Trabalho/layout ADI/trator.png"><a class="legenda">Agropecuária p</a></a>
-          </div>  
-          <div class="col-md-3">
-            <a href="#"><img style="padding-bottom: 0.5%;" width="200" src="/home/carlos/Área de Trabalho/layout ADI/caracterizacao.png"><a class="legenda">Caracterização</a></a>
-          </div>
-          <div class="col-md-3">  
-            <a href="#"><img style="padding-bottom: 0.5%;" width="200" src="/home/carlos/Área de Trabalho/layout ADI/quimica.png"><a class="legenda">Ciência e Tecnologia</a></a>
+            <a href="http://dados.al.gov.br/group/eb62fd2a-be66-44b5-a0ac-595c15249380"><img style="padding-bottom: 0.5%;" width="200" src="/12/layout ADI/trator.png"><a class="legenda">Agropecuária p</a></a>
           </div>
           <div class="col-md-3">
-            <a href="#"><img style="padding-bottom: 0.5%;" width="200" src="/home/carlos/Área de Trabalho/layout ADI/culturaes.png"><a class="legenda">Cultura e Esportes</a></a>
+            <a href="http://dados.al.gov.br/group/fb70802f-958a-44ad-a7cf-fa6fb24b7d3a"><img style="padding-bottom: 0.5%;" width="200" src="/12/layout ADI/caracterizacao.png"><a class="legenda">Caracterização</a></a>
           </div>
           <div class="col-md-3">
-            <a href="#"><img style="padding-bottom: 0.5%;" width="200" src="/home/carlos/Área de Trabalho/layout ADI/povo.png"><a class="legenda">Demografia</a></a>
+            <a href="http://dados.al.gov.br/group/93b36219-ae8d-47ac-9e0d-612cd650e6ef"><img style="padding-bottom: 0.5%;" width="200" src="/12/layout ADI/quimica.png"><a class="legenda">Ciência e Tecnologia</a></a>
           </div>
           <div class="col-md-3">
-            <a href="#"><img style="padding-bottom: 0.5%;" width="200" src="/home/carlos/Área de Trabalho/layout ADI/eleva.png"><a class="legenda">Desenvolvimento</a></a>
+            <a href="http://dados.al.gov.br/group/a534649a-a0f7-4d4f-a26e-aa03a0a52f2e"><img style="padding-bottom: 0.5%;" width="200" src="/12/layout ADI/culturaes.png"><a class="legenda">Cultura e Esportes</a></a>
           </div>
           <div class="col-md-3">
-            <a href="#"><img style="padding-bottom: 0.5%;" width="200" src="/home/carlos/Área de Trabalho/layout ADI/grafico.png"><a class="legenda">Economia</a></a>
+            <a href="http://dados.al.gov.br/group/54c70406-ee3f-4eb0-bb94-d00834d79c19"><img style="padding-bottom: 0.5%;" width="200" src="/12/layout ADI/povo.png"><a class="legenda">Demografia</a></a>
           </div>
           <div class="col-md-3">
-            <a href="#"><img style="padding-bottom: 0.5%;" width="200" src="/home/carlos/Área de Trabalho/layout ADI/livro.png"><a class="legenda">Educação</a></a>
+            <a href="http://dados.al.gov.br/group/3da5206c-d6db-43bd-81b5-b02a7faa1216"><img style="padding-bottom: 0.5%;" width="200" src="/12/layout ADI/eleva.png"><a class="legenda">Desenvolvimento</a></a>
           </div>
           <div class="col-md-3">
-            <a href="#"><img style="padding-bottom: 0.5%;" width="200" src="/home/carlos/Área de Trabalho/layout ADI/financa.png"><a class="legenda">Finanças</a></a>
+            <a href="http://dados.al.gov.br/group/44a43628-c3c4-406d-a61a-16fda4bf724d"><img style="padding-bottom: 0.5%;" width="200" src="/12/layout ADI/grafico.png"><a class="legenda">Economia</a></a>
           </div>
           <div class="col-md-3">
-            <a href="#"><img style="padding-bottom: 0.5%;" width="200" src="/home/carlos/Área de Trabalho/layout ADI/amizade.png"><a class="legenda">Gestão Pública</a></a>
+            <a href="http://dados.al.gov.br/group/8eaafbf6-06b9-4850-816b-5aa251097187"><img style="padding-bottom: 0.5%;" width="200" src="/12/layout ADI/livro.png"><a class="legenda">Educação</a></a>
           </div>
           <div class="col-md-3">
-            <a href="#"><img style="padding-bottom: 0.5%;" width="200" src="/home/carlos/Área de Trabalho/layout ADI/industria.png"><a class="legenda">Infraestutura</a></a>
+            <a href="#"><img style="padding-bottom: 0.5%;" width="200" src="/12/layout ADI/financa.png"><a class="legenda">Finanças</a></a>
           </div>
           <div class="col-md-3">
-            <a href="#"><img style="padding-bottom: 0.5%;" width="200" src="/home/carlos/Área de Trabalho/layout ADI/planta.png"><a class="legenda">Meio Ambiente</a></a>
+            <a href="http://dados.al.gov.br/group/9e744436-2323-42bb-943b-6806ae198ef7"><img style="padding-bottom: 0.5%;" width="200" src="/12/layout ADI/amizade.png"><a class="legenda">Gestão Pública</a></a>
           </div>
           <div class="col-md-3">
-            <a href="#"><img style="padding-bottom: 0.5%;" width="200" src="/home/carlos/Área de Trabalho/layout ADI/doc.png"><a class="legenda">Publicações</a></a>
+            <a href="http://dados.al.gov.br/group/37d41d5b-b694-42cc-a8c4-8d515e23f31a"><img style="padding-bottom: 0.5%;" width="200" src="/12/layout ADI/industria.png"><a class="legenda">Infraestutura</a></a>
           </div>
           <div class="col-md-3">
-            <a href="#"><img style="padding-bottom: 0.5%;" width="200" src="/home/carlos/Área de Trabalho/layout ADI/traba.png"><a class="legenda">trabalho</a></a>
+            <a href="http://dados.al.gov.br/group/d437399b-41f1-4c93-aad5-3528170d06b7"><img style="padding-bottom: 0.5%;" width="200" src="/12/layout ADI/planta.png"><a class="legenda">Meio Ambiente</a></a>
           </div>
           <div class="col-md-3">
-            <a href="#"><img style="padding-bottom: 0.5%;" width="200" src="/home/carlos/Área de Trabalho/layout ADI/seguranca.png"><a class="legenda">Segurança Pública</a></a>
+            <a href="http://dados.al.gov.br/group/bb44bb0c-deb1-4611-aa68-d02a74a17544"><img style="padding-bottom: 0.5%;" width="200" src="/12/layout ADI/doc.png"><a class="legenda">Publicações</a></a>
           </div>
           <div class="col-md-3">
-            <a href="#"><img style="padding-bottom: 0.5%;" width="200" src="/home/carlos/Área de Trabalho/layout ADI/viagem.png"><a class="legenda">Turismo</a></a>
+            <a href="http://dados.al.gov.br/group/084332ab-ab77-43d6-9c58-7af39ba1cf8f"><img style="padding-bottom: 0.5%;" width="200" src="/12/layout ADI/traba.png"><a class="legenda">trabalho</a></a>
           </div>
-            
-          </div>  
+          <div class="col-md-3">
+            <a href="http://dados.al.gov.br/group/0c7db277-f933-49f2-8706-4c7e5bbacd48"><img style="padding-bottom: 0.5%;" width="200" src="/12/layout ADI/seguranca.png"><a class="legenda">Segurança Pública</a></a>
+          </div>
+          <div class="col-md-3">
+            <a href="#"><img style="padding-bottom: 0.5%;" width="200" src="/12/layout ADI/viagem.png"><a class="legenda">Turismo</a></a>
+          </div>
+          </div>
         </div>
       </div>
     </div>
@@ -388,7 +388,7 @@
     <div class="container">
       <div class="row section-body">
         <div class="col-md-12 text-center" id="about">
-          <h1 class="title">Sistema de Informações Municipais</h1>
+          <h1 class="title" id="municipal-information">Sistema de Informações Municipais</h1>
         </div>
         <div class="col-md-12 text-center" id="about">
           <p class="context">
@@ -401,7 +401,7 @@
         </div>
         <div class="col-md-8 municipal-information-cont col-md-offset-2">
           <div class="col-md-2 municipal-information-topics text-center">
-            <img src="/home/carlos/www/projetos_seplag/ckanext-adi_theme2/ckanext/adi_theme/public/images/_img-globo1.png" class="images-topics" alt="Localidades">
+            <img src="/12/public/images/_img-globo1.png" class="images-topics" alt="Localidades">
             <h3 class="title-topics">Localidades</h3>
             <p class="text-topics">
               Primeiro, indique a localidade e regiões das quais deseja obter informações.
@@ -411,7 +411,7 @@
             <img src="http://www.dados.al.gov.br/images/_img-seta.png" class="setas">
           </div>
           <div class="col-md-2 municipal-information-topics text-center">
-            <img src="/home/carlos/www/projetos_seplag/ckanext-adi_theme2/ckanext/adi_theme/public/images/_img-infor1.png" class="images-topics" alt="Informações">
+            <img src="/12/public/images/_img-infor1.png" class="images-topics" alt="Informações">
             <h3 class="title-topics">Informações</h3>
             <p class="text-topics">
               Depois, determine quais as informações deseja exibir no sistema.
@@ -421,7 +421,7 @@
             <img src="http://www.dados.al.gov.br/images/_img-seta.png" class="setas">
           </div>
           <div class="col-md-2 municipal-information-topics text-center">
-            <img src="/home/carlos/www/projetos_seplag/ckanext-adi_theme2/ckanext/adi_theme/public/images/_img-result1.png" class="images-topics" alt="Resultados">
+            <img src="/12/public/images/_img-result1.png" class="images-topics" alt="Resultados">
             <h3 class="title-topics">Resultados</h3>
             <p class="text-topics">
               A partir disto serão geradas tabelas e mapas de acordo com suas escolhas feitas.
@@ -445,7 +445,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-10 col-md-offset-1 section-body text-center">
-          <img class="algeo" src="/home/carlos/www/projetos_seplag/ckanext-adi_theme2/ckanext/adi_theme/public/images/_img-algeo1.png" alt="Ícone do Alagoas Geográfico">
+          <img class="algeo" src="/12/public/images/_img-algeo1.png" alt="Ícone do Alagoas Geográfico">
           <h1 class="title">Alagoas Geográfico</h1>
           <p class="context">
             O <b>Alagoas Geográfico</b> é um Sistema de Informações Geográficas na qual é possível ter acesso
@@ -463,7 +463,7 @@
   </div><!-- END ALAGOAS GEOGRAPHIC -->
 
   <!-- LASTEST UPDATES -->
-  <div class="section about" id="about" style="background-color: #B8B8BA;">
+  <div class="section about" id="alagoas-geographic" style="background-color: #B8B8BA;">
     <div class="container">
       <div class="row">
         <div class="col-md-12 section-body text-center">
@@ -471,20 +471,20 @@
           <div class="col-md-6 latest-updates-col">
             <h2 class="title-col">
               <a href="http://dados.al.gov.br/dataset/ultimos-numeros">
-                <img src="/home/carlos/www/projetos_seplag/ckanext-adi_theme2/ckanext/adi_theme/public/images/_icon-estatistic1.png" alt="Ícone de Estatísticas Recentes">Estatísticas Recentes
+                <img src="/12/public/images/_icon-estatistic1.png" alt="Ícone de Estatísticas Recentes">Estatísticas Recentes
               </a>
             </h2>
             <div class="table-statistic" ng-controller="RecentStatisticsController" ng-init="fetchData()">
               <table class="latest-updates-table text-left">
                 <tbody ng-repeat="recent_statistic in recent_statistics">
-                  <tr class="line-blue">
-                    <td class="td-left">{[ recent_statistic.title ]}</td>
-                    <td class="td-right">{[ recent_statistic.value ]}</td>
-                  </tr>
-                  <tr class="line-white">
-                    <td class="td-left">{[ recent_statistic.description ]}</td>
-                    <td class="td-right">{[ recent_statistic.period ]}</td>
-                  </tr>
+                  <!--<tr class="line-blue">-->
+                  <!--  <td class="td-left">{[ recent_statistic.title ]}</td>-->
+                  <!--  <td class="td-right">{[ recent_statistic.value ]}</td>-->
+                  <!--</tr>-->
+                  <!--<tr class="line-white">-->
+                  <!--  <td class="td-left">{[ recent_statistic.description ]}</td>-->
+                  <!--  <td class="td-right">{[ recent_statistic.period ]}</td>-->
+                  <!--</tr>-->
                 </tbody>
               </table>
             </div>
@@ -499,7 +499,7 @@
               <div class="col-md-12 cont-col">
                 <h2 class="title-col">
                   <a href="http://dados.al.gov.br/dataset?tags=Mapa">
-                    <img src="/home/carlos/www/projetos_seplag/ckanext-adi_theme2/ckanext/adi_theme/public/images/_icon-map1.png" alt="Ícone de Mapas">Mapas
+                    <img src="/12/public/images/_icon-map1.png" alt="Ícone de Mapas">Mapas
                   </a>
                 </h2>
                 <ul class="load-maps">
@@ -513,7 +513,7 @@
               <div class="col-md-12 cont-col">
                 <h2 class="title-col">
                   <a href="http://dados.al.gov.br/dataset?tags=Nota">
-                    <img src="/home/carlos/www/projetos_seplag/ckanext-adi_theme2/ckanext/adi_theme/public/images/_icon-notes1.png" alt="">Notas Técnicas
+                    <img src="/12/public/images/_icon-notes1.png" alt="">Notas Técnicas
                   </a>
                 </h2>
                 <p>
@@ -611,15 +611,7 @@
               Fale Conosco
             </h2>
 
-            <div class="alert alert-success" role="alert" ng-show="sent">
-              <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-              Contato enviado com sucesso!
-            </div>
 
-            <div class="alert alert-danger" role="alert" ng-show="error">
-              <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-              Houve um erro ao enviar o contato. Verifique se todos os campos estão preenchidos.
-            </div>
 
             <form class="contact-form" name="contactForm" ng-submit="sendContact(contact)" novalidate>
               <div class="input-group">
